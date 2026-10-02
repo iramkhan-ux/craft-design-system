@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Storybook Colors page (`packages/ui`): Foundations / Color with light, dark and internal primitives views, built from the token files. React 19, TypeScript, Storybook 10.
 - Color docs page (`docs/color.md`): semantic tokens with light and dark values, guardrails, and internal primitives, generated from the token files.
 - Checkpoint log (`process/checkpoints.md`): Color foundation v1 recorded with its Figma version and repo tag. Approved by Iram Khan.
 - Color tokens: translucent colors now use exact whole-percent alpha instead of 8-digit hex, and both token files are in natural order to match the Figma variables. Values are unchanged (checksums match Figma). Approved by Iram Khan.
