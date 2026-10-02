@@ -4,7 +4,10 @@ import type { ColorModeValue, SemanticColorToken } from '../tokens/generated/col
 
 export type Theme = 'light' | 'dark';
 
+// Exception: a fixed neutral checkerboard that makes translucency visible. It is a documentation
+// device, not a design value, and must look the same in light and dark.
 const checker =
+  // eslint-disable-next-line no-restricted-syntax
   'repeating-conic-gradient(#c9ced6 0% 25%, #ffffff 0% 50%) 50% / 12px 12px';
 
 const v = (name: string) => `var(--craft-color-${name})`;
