@@ -15,4 +15,4 @@ Nothing is added without a designer's confirmation.
 ## Topics
 
 - [Color](color.md): 5 rules
-- [Figma](figma.md): 1 rule
+- [Figma](figma.md): 3 rules
