@@ -1,0 +1,78 @@
+name: Visual comparison
+
+# Every story is screenshotted and compared with the approved image in
+# packages/ui/visual/__screenshots__. A change to an approved image is part of the PR, so the
+# Admin sees the before and after in the diff and approves it by merging.
+#
+# To approve a visual change, add the label `update-visual-baselines` to the PR. This workflow
+# then regenerates the images, commits them to the PR branch and removes the label.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: visual-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  visual:
+    runs-on: ubuntu-latest
+    container: mcr.microsoft.com/playwright:v1.63.0-noble
+    defaults:
+      run:
+        working-directory: packages/ui
+    env:
+      UPDATE: ${{ contains(github.event.pull_request.labels.*.name, 'update-visual-baselines') && github.event.pull_request.head.repo.full_name == github.repository }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: packages/ui/.nvmrc
+          cache: npm
+          cache-dependency-path: packages/ui/package-lock.json
+      - run: npm ci
+      - run: npm run tokens && npm run build-storybook
+
+      - name: Regenerate approved images (label present)
+        if: env.UPDATE == 'true'
+        run: npx playwright test --update-snapshots
+
+      - name: Commit regenerated images
+        if: env.UPDATE == 'true'
+        run: |
+          git config --global --add safe.directory "$GITHUB_WORKSPACE"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add visual/__screenshots__
+          if git diff --cached --quiet; then
+            echo "No visual changes."
+          else
+            git commit -m "Update approved visual images"
+            git push
+          fi
+          curl -sS -X DELETE -H "Authorization: Bearer $GH_TOKEN" \
+            "https://api.github.com/repos/$GITHUB_REPOSITORY/issues/${{ github.event.pull_request.number }}/labels/update-visual-baselines" || true
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Compare with approved images
+        run: npx playwright test
+
+      - name: Keep the report and the built Storybook
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: visual-report-and-storybook
+          path: |
+            packages/ui/playwright-report
+            packages/ui/test-results
+            packages/ui/storybook-static
+          retention-days: 14
+          if-no-files-found: ignore

@@ -72,7 +72,7 @@ function TokenCard({ token, theme, short }: { token: SemanticColorToken; theme: 
       <CopyName text={token.cssVar} label={short} />
       <div style={{ font: '12px/16px system-ui, sans-serif', color: v('surface-text-gray-subtle') }}>
         <div>{valueText(mode)}</div>
-        <div style={{ color: v('surface-text-gray-muted') }}>{mode.ref ? mode.value : ''}</div>
+        <div style={{ color: v('surface-text-gray-subtle') }}>{mode.ref ? mode.value : ''}</div>
       </div>
     </div>
   );
@@ -152,7 +152,7 @@ export function PrimitiveColors() {
           padding: 12,
           borderRadius: 8,
           background: v('feedback-background-notice-subtle'),
-          color: v('feedback-text-notice-intense'),
+          color: v('surface-text-gray-normal'),
         }}
       >
         Raw colors for reference only. Do not use them in designs or components. Use the semantic tokens.
