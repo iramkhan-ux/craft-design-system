@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Story tests, accessibility checks that fail the build, and visual comparison of every story against approved images, all on every PR. Fixed two accessibility problems on the Colors page (faint reference value, notice banner text color). Approved by Iram Khan, 2026-10-03.
 - Typography guardrails (4 rules): text styles only, heading font for Display and Heading only, Caption regular only, and text color kept out of text styles. Approved by Iram Khan, 2026-10-03.
 - Storybook standard (`skills/code-conventions/storybook.md`), automated checks (types, lint with a no-raw-color rule, Storybook build) on every PR, and publishing of the latest Storybook to GitHub Pages from `main`. TypeScript pinned to 6.0.3. Approved by Iram Khan, 2026-10-03.
 - Typography foundation (decision 0002): token master record with 39 primitives and 45 text styles, desktop values with mobile values recorded. Approved by Iram Khan, 2026-10-03.

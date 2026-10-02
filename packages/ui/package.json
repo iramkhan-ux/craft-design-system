@@ -9,7 +9,10 @@
     "storybook": "npm run tokens && storybook dev -p 6006",
     "build-storybook": "npm run tokens && storybook build",
     "typecheck": "npm run tokens && tsc --noEmit",
-    "lint": "npm run tokens && eslint ."
+    "lint": "npm run tokens && eslint .",
+    "test": "npm run tokens && vitest run",
+    "visual": "npm run build-storybook && playwright test",
+    "visual:update": "npm run build-storybook && playwright test --update-snapshots"
   },
   "dependencies": {
     "react": "^19.3.0",
@@ -17,20 +20,27 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
     "@storybook/addon-a11y": "^10.6.1",
     "@storybook/addon-docs": "^10.6.1",
+    "@storybook/addon-vitest": "^10.6.1",
     "@storybook/react-vite": "^10.6.1",
+    "@types/node": "^24.19.1",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.1",
+    "@vitest/browser-playwright": "^5.0.3",
     "eslint": "^10.12.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-storybook": "^10.6.1",
     "globals": "^17.13.0",
+    "http-server": "^14.1.1",
+    "playwright": "^1.63.0",
     "storybook": "^10.6.1",
     "typescript": "~6.0.3",
     "typescript-eslint": "^8.71.0",
-    "vite": "^8.3.2"
+    "vite": "^8.3.2",
+    "vitest": "^5.0.3"
   },
   "engines": {
     "node": ">=24"

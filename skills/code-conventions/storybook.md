@@ -30,16 +30,20 @@ Approved by Iram Khan (iramkhan-ux) on 2026-10-03. Scope: system-wide. This is C
 | Types (`tsc`) | On |
 | Lint, including the no-raw-color rule and Storybook's own rules | On |
 | Storybook builds | On |
-| Behavior tests (click, type, tab through) | Next PR |
-| Accessibility violations fail the build | Next PR |
-| Visual comparison against the approved version | Next PR |
+| Story tests: every story runs in a real browser, and play functions (click, type, tab) run with it | On |
+| Accessibility violations fail the test (`a11y.test = 'error'`) | On |
+| Visual comparison: every story is screenshotted and must match the approved image exactly | On |
 
 A pull request cannot be merged by an agent. The Admin merges.
+
+**Approving a visual change.** Approved images live in `packages/ui/visual/__screenshots__` and are made in CI on Linux, so rendering is identical every time. When a visual change is intended, add the label `update-visual-baselines` to the PR. CI regenerates the images, commits them to the PR branch and removes the label. The Admin reviews the before and after in the PR diff and approves by merging. Never generate approved images on a Mac.
+
+**Writing a component story.** Add a `play` function for any behavior (click, keyboard, focus). Do not turn off or lower the accessibility check on a story. If a violation comes from a token pairing, raise it with the designer instead of working around it.
 
 ## 5. Publishing
 
 - The latest approved Storybook is published to GitHub Pages every time `main` changes.
-- Per-PR preview links come with the visual comparison step.
+- Every PR keeps the built Storybook and the visual report as a downloadable artifact for 14 days. A live per-PR preview link is not part of the free setup. It can be added later.
 - Each approved checkpoint is a repo tag and is logged in `process/checkpoints.md`.
 
 ## 6. Reliability

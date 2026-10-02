@@ -3,7 +3,7 @@ import '../src/tokens/generated/color.css';
 
 const preview: Preview = {
   parameters: {
-    a11y: { test: 'todo' },
+    a11y: { test: 'error' },
   },
 };
 

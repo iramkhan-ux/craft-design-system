@@ -4,3 +4,5 @@ debug-storybook.log
 # Built from ../../tokens by `npm run tokens`
 src/tokens/generated
 .claude
+playwright-report
+test-results
