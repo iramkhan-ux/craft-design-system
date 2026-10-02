@@ -34,7 +34,7 @@ Second foundation of the Craft pilot. Values are read from Blade's source (`blad
 
 ## Rules confirmed
 
-Typography guardrail rules are proposed to the designer and are not saved yet.
+See `skills/guardrails/typography.md` (4 rules, confirmed 2026-10-03).
 
 ## Downstream artifacts
 

@@ -16,3 +16,4 @@ Nothing is added without a designer's confirmation.
 
 - [Color](color.md): 5 rules
 - [Figma](figma.md): 3 rules
+- [Typography](typography.md): 4 rules
