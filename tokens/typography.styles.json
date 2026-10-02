@@ -1,0 +1,452 @@
+{
+  "$type": "typography",
+  "display": {
+    "small": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.800}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.800}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.800}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.800}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.800}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.800}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "medium": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.900}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.900}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.900}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.900}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.900}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.900}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "large": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.1000}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.1000}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.1000}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.1000}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.1000}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.1000}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "xlarge": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.1100}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.1100}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.1100}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.1100}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.1100}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.1100}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    }
+  },
+  "heading": {
+    "small": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.300}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.300}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.300}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.300}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.300}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.300}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "medium": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.400}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.400}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.400}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.400}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.400}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.400}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "large": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.500}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.500}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.500}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.500}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.500}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.500}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "xlarge": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.600}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.600}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.600}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.600}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.600}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.600}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "2xlarge": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.700}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.700}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.700}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.700}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.heading}",
+          "fontSize": "{font.size.700}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.700}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    }
+  },
+  "body": {
+    "xsmall": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.25}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.25}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.25}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.25}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.25}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.25}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      }
+    },
+    "small": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.75}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.75}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.75}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.75}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.75}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.75}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      }
+    },
+    "medium": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.100}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.100}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.100}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.100}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.100}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.100}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      }
+    },
+    "large": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.200}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.200}",
+          "letterSpacing": "{font.letterSpacing.25}"
+        }
+      },
+      "medium": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.200}",
+          "fontWeight": "{font.weight.medium}",
+          "lineHeight": "{font.lineHeight.200}",
+          "letterSpacing": "{font.letterSpacing.25}"
+        }
+      },
+      "semibold": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.200}",
+          "fontWeight": "{font.weight.semibold}",
+          "lineHeight": "{font.lineHeight.200}",
+          "letterSpacing": "{font.letterSpacing.25}"
+        }
+      }
+    }
+  },
+  "caption": {
+    "small": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.50}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.50}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      }
+    },
+    "medium": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.text}",
+          "fontSize": "{font.size.100}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.50}",
+          "letterSpacing": "{font.letterSpacing.50}"
+        }
+      }
+    }
+  },
+  "code": {
+    "small": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.code}",
+          "fontSize": "{font.size.25}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.25}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "bold": {
+        "$value": {
+          "fontFamily": "{font.family.code}",
+          "fontSize": "{font.size.25}",
+          "fontWeight": "{font.weight.bold}",
+          "lineHeight": "{font.lineHeight.25}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    },
+    "medium": {
+      "regular": {
+        "$value": {
+          "fontFamily": "{font.family.code}",
+          "fontSize": "{font.size.75}",
+          "fontWeight": "{font.weight.regular}",
+          "lineHeight": "{font.lineHeight.75}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      },
+      "bold": {
+        "$value": {
+          "fontFamily": "{font.family.code}",
+          "fontSize": "{font.size.75}",
+          "fontWeight": "{font.weight.bold}",
+          "lineHeight": "{font.lineHeight.75}",
+          "letterSpacing": "{font.letterSpacing.100}"
+        }
+      }
+    }
+  }
+}

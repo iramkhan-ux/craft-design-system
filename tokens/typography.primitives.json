@@ -1,0 +1,339 @@
+{
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "text": {
+        "$value": "\"Inter\", \"Inter Fallback Arial\", Arial"
+      },
+      "heading": {
+        "$value": "\"TASA Orbiter\", \"TASA Orbiter Fallback Arial\", Arial"
+      },
+      "code": {
+        "$value": "\"Menlo\", San Francisco Mono, Courier New, Roboto Mono, monospace"
+      }
+    },
+    "size": {
+      "25": {
+        "$value": "10px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "10px"
+            }
+          }
+        }
+      },
+      "50": {
+        "$value": "11px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "11px"
+            }
+          }
+        }
+      },
+      "75": {
+        "$value": "12px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "12px"
+            }
+          }
+        }
+      },
+      "100": {
+        "$value": "14px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "14px"
+            }
+          }
+        }
+      },
+      "200": {
+        "$value": "16px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "16px"
+            }
+          }
+        }
+      },
+      "300": {
+        "$value": "18px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "16px"
+            }
+          }
+        }
+      },
+      "400": {
+        "$value": "20px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "18px"
+            }
+          }
+        }
+      },
+      "500": {
+        "$value": "24px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "20px"
+            }
+          }
+        }
+      },
+      "600": {
+        "$value": "32px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "24px"
+            }
+          }
+        }
+      },
+      "700": {
+        "$value": "40px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "32px"
+            }
+          }
+        }
+      },
+      "800": {
+        "$value": "48px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "34px"
+            }
+          }
+        }
+      },
+      "900": {
+        "$value": "56px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "36px"
+            }
+          }
+        }
+      },
+      "1000": {
+        "$value": "64px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "38px"
+            }
+          }
+        }
+      },
+      "1100": {
+        "$value": "72px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "40px"
+            }
+          }
+        }
+      },
+      "$type": "dimension"
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular": {
+        "$value": 400
+      },
+      "medium": {
+        "$value": 500
+      },
+      "semibold": {
+        "$value": 600
+      },
+      "bold": {
+        "$value": 700
+      }
+    },
+    "lineHeight": {
+      "0": {
+        "$value": "0px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "0px"
+            }
+          }
+        }
+      },
+      "25": {
+        "$value": "13px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "13px"
+            }
+          }
+        }
+      },
+      "50": {
+        "$value": "16px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "16px"
+            }
+          }
+        }
+      },
+      "75": {
+        "$value": "17px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "17px"
+            }
+          }
+        }
+      },
+      "100": {
+        "$value": "20px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "20px"
+            }
+          }
+        }
+      },
+      "200": {
+        "$value": "24px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "24px"
+            }
+          }
+        }
+      },
+      "300": {
+        "$value": "24px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "22px"
+            }
+          }
+        }
+      },
+      "400": {
+        "$value": "26px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "24px"
+            }
+          }
+        }
+      },
+      "500": {
+        "$value": "32px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "26px"
+            }
+          }
+        }
+      },
+      "600": {
+        "$value": "38px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "32px"
+            }
+          }
+        }
+      },
+      "700": {
+        "$value": "46px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "38px"
+            }
+          }
+        }
+      },
+      "800": {
+        "$value": "56px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "40px"
+            }
+          }
+        }
+      },
+      "900": {
+        "$value": "64px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "42px"
+            }
+          }
+        }
+      },
+      "1000": {
+        "$value": "70px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "46px"
+            }
+          }
+        }
+      },
+      "1100": {
+        "$value": "78px",
+        "$extensions": {
+          "craft": {
+            "modes": {
+              "onMobile": "48px"
+            }
+          }
+        }
+      },
+      "$type": "dimension"
+    },
+    "letterSpacing": {
+      "25": {
+        "$value": "-3.3%"
+      },
+      "50": {
+        "$value": "-1.3%"
+      },
+      "100": {
+        "$value": "0%"
+      },
+      "$type": "dimension"
+    }
+  }
+}

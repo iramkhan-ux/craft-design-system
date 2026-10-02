@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Typography foundation (decision 0002): token master record with 39 primitives and 45 text styles, desktop values with mobile values recorded. Approved by Iram Khan, 2026-10-03.
 - Storybook Colors page (`packages/ui`): Foundations / Color with light, dark and internal primitives views, built from the token files. React 19, TypeScript, Storybook 10.
 - Color docs page (`docs/color.md`): semantic tokens with light and dark values, guardrails, and internal primitives, generated from the token files.
 - Checkpoint log (`process/checkpoints.md`): Color foundation v1 recorded with its Figma version and repo tag. Approved by Iram Khan.
