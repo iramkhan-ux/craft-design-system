@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Storybook standard (`skills/code-conventions/storybook.md`), automated checks (types, lint with a no-raw-color rule, Storybook build) on every PR, and publishing of the latest Storybook to GitHub Pages from `main`. TypeScript pinned to 6.0.3. Approved by Iram Khan, 2026-10-03.
 - Typography foundation (decision 0002): token master record with 39 primitives and 45 text styles, desktop values with mobile values recorded. Approved by Iram Khan, 2026-10-03.
 - Storybook Colors page (`packages/ui`): Foundations / Color with light, dark and internal primitives views, built from the token files. React 19, TypeScript, Storybook 10.
 - Color docs page (`docs/color.md`): semantic tokens with light and dark values, guardrails, and internal primitives, generated from the token files.
