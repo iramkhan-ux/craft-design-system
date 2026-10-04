@@ -9,6 +9,7 @@ The master record of design values. Figma variables, code, and docs are generate
 | `color.primitives.json` | 353 raw colors (internal only) |
 | `color.semantic.json` | 435 semantic color tokens |
 | `typography.primitives.json` | 39 raw type values: families, sizes, line heights, letter spacings, weights (internal only) |
+| `spacing.json` | 33 layout tokens: spacing (12), radius (10), border width (5), breakpoints (6). One layer, pixels |
 | `typography.styles.json` | 45 text styles (Display, Heading, Body, Caption, Code), each pointing to primitives |
 
 ## Format
