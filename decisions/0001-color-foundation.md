@@ -40,7 +40,7 @@ See `skills/guardrails/color.md`.
 ## Downstream artifacts
 
 - Tokens: `tokens/color.primitives.json`, `tokens/color.semantic.json` (this pull request)
-- Figma: pending (new file, not the Blade copy)
+- Figma: built in the Craft file (`_color-primitives`, `color-semantic`, and a Color page specimen). Approved checkpoint `color-foundation-v1`.
 - Code / Storybook: pending
 - Docs: pending
 - Changelog: entry added in this pull request
