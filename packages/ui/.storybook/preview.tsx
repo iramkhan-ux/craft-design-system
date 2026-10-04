@@ -10,6 +10,7 @@ import '@fontsource/roboto-mono/latin-700.css';
 import '../src/tokens/generated/color.css';
 import '../src/tokens/generated/typography.css';
 import '../src/tokens/generated/spacing.css';
+import '../src/tokens/generated/elevation.css';
 
 const preview: Preview = {
   parameters: {

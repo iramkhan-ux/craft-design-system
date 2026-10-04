@@ -1,0 +1,18 @@
+{
+  "elevation": {
+    "$type": "shadow",
+    "none": {"$value": "none"},
+    "lowRaised": {
+      "$value": {"offsetX": "0px", "offsetY": "2px", "blur": "4px", "spread": "0px", "color": "{color.neutral.blueGrayLight.a1106}"},
+      "$extensions": {"craft": {"modes": {"onDark": {"offsetX": "0px", "offsetY": "2px", "blur": "4px", "spread": "0px", "color": "{color.neutral.black.100}"}}}}
+    },
+    "midRaised": {
+      "$value": {"offsetX": "0px", "offsetY": "16px", "blur": "12px", "spread": "0px", "color": "{color.neutral.blueGrayLight.a1106}"},
+      "$extensions": {"craft": {"modes": {"onDark": {"offsetX": "0px", "offsetY": "2px", "blur": "8px", "spread": "0px", "color": "{color.neutral.black.100}"}}}}
+    },
+    "highRaised": {
+      "$value": {"offsetX": "0px", "offsetY": "8px", "blur": "24px", "spread": "-4px", "color": "{color.neutral.blueGrayLight.a1106}"},
+      "$extensions": {"craft": {"modes": {"onDark": {"offsetX": "0px", "offsetY": "8px", "blur": "24px", "spread": "-4px", "color": "{color.neutral.black.100}"}}}}
+    }
+  }
+}

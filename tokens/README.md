@@ -10,6 +10,7 @@ The master record of design values. Figma variables, code, and docs are generate
 | `color.semantic.json` | 435 semantic color tokens |
 | `typography.primitives.json` | 39 raw type values: families, sizes, line heights, letter spacings, weights (internal only) |
 | `spacing.json` | 33 layout tokens: spacing (12), radius (10), border width (5), breakpoints (6). One layer, pixels |
+| `elevation.json` | 4 elevation levels (shadows), light and dark. Colors point to color primitives |
 | `typography.styles.json` | 45 text styles (Display, Heading, Body, Caption, Code), each pointing to primitives |
 
 ## Format
@@ -20,6 +21,7 @@ The master record of design values. Figma variables, code, and docs are generate
 - A value in braces, like `{color.chromatic.azure.500}`, points to another token.
 - In semantic tokens, `$value` is the light theme (onLight). The dark theme (onDark) is under `$extensions.craft.modes.onDark`. The pilot builds light only.
 - Typography sizes and line heights hold the desktop value in `$value` and the mobile value under `$extensions.craft.modes.onMobile`. Letter spacing is a percent string. Font family tokens carry `$extensions.craft.figmaFontFamily`, the name Figma uses (the CSS fallback list stays in `$value`). `npm run tokens:typography` in `packages/ui` prints the parity checksum to compare with Figma. Text styles are `typography` tokens whose parts are pointers to primitives.
+- Elevation tokens are `shadow` tokens: offset x, offset y, blur, spread and a color pointer. Dark values are under `$extensions.craft.modes.onDark`.
 - Raw tokens (5 in color: three `transparent` steps, `surface.background.accent.intense`, and `transparent`) hold a color value instead of a pointer.
 
 ## Attribution
