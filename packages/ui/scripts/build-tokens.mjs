@@ -3,6 +3,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { parityValue } from './lib/color.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const tokensDir = path.resolve(root, '../../tokens');
@@ -102,13 +103,9 @@ export const primitiveColors: PrimitiveColorToken[] = ${JSON.stringify(
 `;
 fs.writeFileSync(path.join(outDir, 'color.ts'), ts);
 
-// 4. Parity checksum (same method as the Figma check in process/checkpoints.md, light theme)
-const hv = (s) => {
-  if (s.startsWith('#')) return `${s}@100`;
-  const m = /^rgb\((\d+) (\d+) (\d+) \/ (\d+)%\)$/.exec(s);
-  const x = (n) => Number(n).toString(16).padStart(2, '0');
-  return `#${x(m[1])}${x(m[2])}${x(m[3])}@${m[4]}`;
-};
+// 4. Parity checksum (same method as the Figma check in process/checkpoints.md, light theme).
+// A value is rounded to 8-bit hex plus a whole-percent alpha, which is what Figma holds.
+const hv = parityValue;
 const fnv = (str) => {
   let h = 0x811c9dc5;
   for (let i = 0; i < str.length; i++) {
@@ -119,4 +116,6 @@ const fnv = (str) => {
 };
 const pl = primitives.map((t) => `${t.path.join('/')}=${hv(t.leaf.$value)}`).sort();
 const sl = semantic.map((t) => `${t.path.join('/')}=${ref(t.leaf.$value) ? ref(t.leaf.$value).split('.').join('/') : hv(t.leaf.$value)}`).sort();
-console.log(`tokens: ${primitives.length} primitives (${fnv(pl.join('\n'))}), ${semantic.length} semantic (${fnv(sl.join('\n'))})`);
+// Dark theme too, so a dark value can never change unnoticed.
+const dl = semantic.map((t) => { const d = t.leaf.$extensions.craft.modes.onDark; return `${t.path.join('/')}=${ref(d) ? ref(d).split('.').join('/') : hv(d)}`; }).sort();
+console.log(`tokens: ${primitives.length} primitives (${fnv(pl.join('\n'))}), ${semantic.length} semantic (${fnv(sl.join('\n'))}), dark (${fnv(dl.join('\n'))})`);

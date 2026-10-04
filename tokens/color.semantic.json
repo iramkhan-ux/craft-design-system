@@ -2,53 +2,59 @@
   "$type": "color",
   "surface": {
     "background": {
-      "primary": {
-        "subtle": {"$value": "{color.chromatic.azure.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}},
-        "intense": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}}
-      },
       "gray": {
         "subtle": {"$value": "{color.neutral.blueGrayLight.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1300}"}}}},
         "moderate": {"$value": "{color.neutral.blueGrayLight.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1200}"}}}},
         "intense": {"$value": "{color.neutral.blueGrayLight.0}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1100}"}}}}
       },
-      "cloud": {
-        "subtle": {"$value": "{color.chromatic.cloud.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cloud.900}"}}}},
-        "intense": {"$value": "{color.chromatic.cloud.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cloud.100}"}}}}
+      "primary": {
+        "faint": {"$value": "transparent", "$extensions": {"craft": {"modes": {"onDark": "transparent"}}}},
+        "subtle": {"$value": "{color.chromatic.azure.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}},
+        "moderate": {"$value": "transparent", "$extensions": {"craft": {"modes": {"onDark": "transparent"}}}},
+        "intense": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
+        "strong": {"$value": "transparent", "$extensions": {"craft": {"modes": {"onDark": "transparent"}}}}
       },
       "sea": {
         "subtle": {"$value": "{color.chromatic.sea.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sea.900}"}}}},
         "intense": {"$value": "{color.chromatic.sea.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sea.100}"}}}}
+      },
+      "cloud": {
+        "subtle": {"$value": "{color.chromatic.cloud.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cloud.900}"}}}},
+        "intense": {"$value": "{color.chromatic.cloud.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cloud.100}"}}}}
+      },
+      "accent": {
+        "intense": {"$value": "transparent", "$extensions": {"craft": {"modes": {"onDark": "transparent"}}}}
       }
     },
     "border": {
+      "gray": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.a912}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}}
+      },
       "primary": {
         "normal": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
         "muted": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}}
-      },
-      "gray": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.700}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.900}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}}
       }
     },
     "text": {
+      "gray": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.1300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.0}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a932}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a564}"}}}}
+      },
       "primary": {
         "normal": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}}
-      },
-      "gray": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.1200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
-      },
-      "onCloud": {
-        "onSubtle": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.200}"}}}},
-        "onIntense": {"$value": "{color.chromatic.azure.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}}
       },
       "onSea": {
         "onSubtle": {"$value": "{color.chromatic.forest.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.forest.200}"}}}},
         "onIntense": {"$value": "{color.chromatic.forest.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.forest.800}"}}}}
       },
+      "onCloud": {
+        "onSubtle": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.200}"}}}},
+        "onIntense": {"$value": "{color.chromatic.azure.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}}
+      },
       "staticWhite": {
         "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
         "subtle": {"$value": "{color.neutral.white.450}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.450}"}}}},
@@ -63,23 +69,23 @@
       }
     },
     "icon": {
+      "gray": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.1300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.0}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a932}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a532}"}}}}
+      },
       "primary": {
         "normal": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}}
-      },
-      "gray": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.1200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
-      },
-      "onCloud": {
-        "onSubtle": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
-        "onIntense": {"$value": "{color.chromatic.azure.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}}
       },
       "onSea": {
         "onSubtle": {"$value": "{color.chromatic.forest.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.forest.400}"}}}},
         "onIntense": {"$value": "{color.chromatic.forest.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.forest.600}"}}}}
       },
+      "onCloud": {
+        "onSubtle": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
+        "onIntense": {"$value": "{color.chromatic.azure.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}}
+      },
       "staticWhite": {
         "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
         "subtle": {"$value": "{color.neutral.white.450}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.450}"}}}},
@@ -94,263 +100,8 @@
       }
     }
   },
-  "interactive": {
-    "background": {
-      "primary": {
-        "default": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
-        "highlighted": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
-        "faded": {"$value": "{color.chromatic.azure.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a150}"}}}},
-        "fadedHighlighted": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}},
-        "disabled": {"$value": "{color.chromatic.azure.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a100}"}}}}
-      },
-      "gray": {
-        "default": {"$value": "{color.neutral.blueGrayLight.a75}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a75}"}}}},
-        "highlighted": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-        "faded": {"$value": "{color.neutral.blueGrayLight.a25}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a25}"}}}},
-        "fadedHighlighted": {"$value": "{color.neutral.blueGrayLight.a75}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a75}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a50}"}}}}
-      },
-      "neutral": {
-        "default": {"$value": "{color.neutral.blueGrayLight.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "highlighted": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.200}"}}}},
-        "faded": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a75}"}}}},
-        "fadedHighlighted": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}}
-      },
-      "positive": {
-        "default": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
-        "faded": {"$value": "{color.chromatic.emerald.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a150}"}}}},
-        "fadedHighlighted": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}},
-        "disabled": {"$value": "{color.chromatic.emerald.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}}
-      },
-      "negative": {
-        "default": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.crimson.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
-        "faded": {"$value": "{color.chromatic.crimson.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a150}"}}}},
-        "fadedHighlighted": {"$value": "{color.chromatic.crimson.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a200}"}}}},
-        "disabled": {"$value": "{color.chromatic.crimson.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a100}"}}}}
-      },
-      "notice": {
-        "default": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
-        "faded": {"$value": "{color.chromatic.cider.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a150}"}}}},
-        "fadedHighlighted": {"$value": "{color.chromatic.cider.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a200}"}}}},
-        "disabled": {"$value": "{color.chromatic.cider.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a100}"}}}}
-      },
-      "information": {
-        "default": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
-        "faded": {"$value": "{color.chromatic.sapphire.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a150}"}}}},
-        "fadedHighlighted": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}},
-        "disabled": {"$value": "{color.chromatic.sapphire.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}}
-      },
-      "staticWhite": {
-        "default": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
-        "highlighted": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
-        "faded": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}},
-        "fadedHighlighted": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}},
-        "disabled": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}}
-      },
-      "staticBlack": {
-        "default": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
-        "highlighted": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
-        "faded": {"$value": "{color.neutral.black.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.50}"}}}},
-        "fadedHighlighted": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}},
-        "disabled": {"$value": "{color.neutral.black.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.200}"}}}}
-      }
-    },
-    "border": {
-      "primary": {
-        "default": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
-        "highlighted": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
-        "faded": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a150}"}}}},
-        "disabled": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}}
-      },
-      "gray": {
-        "default": {"$value": "{color.neutral.blueGrayLight.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
-        "highlighted": {"$value": "{color.neutral.blueGrayLight.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
-        "faded": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}}
-      },
-      "neutral": {
-        "default": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.200}"}}}},
-        "highlighted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.200}"}}}},
-        "faded": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}}
-      },
-      "positive": {
-        "default": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
-        "faded": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}},
-        "disabled": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}}
-      },
-      "negative": {
-        "default": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.crimson.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
-        "faded": {"$value": "{color.chromatic.crimson.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a100}"}}}},
-        "disabled": {"$value": "{color.chromatic.crimson.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a100}"}}}}
-      },
-      "notice": {
-        "default": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
-        "faded": {"$value": "{color.chromatic.cider.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a100}"}}}},
-        "disabled": {"$value": "{color.chromatic.cider.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a100}"}}}}
-      },
-      "information": {
-        "default": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}},
-        "highlighted": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
-        "faded": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}},
-        "disabled": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}}
-      },
-      "staticWhite": {
-        "default": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
-        "highlighted": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
-        "faded": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}},
-        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
-      },
-      "staticBlack": {
-        "default": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
-        "highlighted": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
-        "faded": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}},
-        "disabled": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
-      }
-    },
-    "text": {
-      "primary": {
-        "normal": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
-        "subtle": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
-        "muted": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
-        "disabled": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}}
-      },
-      "gray": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.1200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
-      },
-      "neutral": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
-      },
-      "positive": {
-        "normal": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.500}"}}}},
-        "muted": {"$value": "{color.chromatic.emerald.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.emerald.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}}
-      },
-      "negative": {
-        "normal": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.crimson.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.500}"}}}},
-        "muted": {"$value": "{color.chromatic.crimson.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.crimson.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a200}"}}}}
-      },
-      "notice": {
-        "normal": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.500}"}}}},
-        "muted": {"$value": "{color.chromatic.cider.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.cider.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a200}"}}}}
-      },
-      "information": {
-        "normal": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.500}"}}}},
-        "muted": {"$value": "{color.chromatic.sapphire.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.sapphire.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}}
-      },
-      "onPrimary": {
-        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
-        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
-        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
-        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
-      },
-      "staticWhite": {
-        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
-        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
-        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
-        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
-      },
-      "staticBlack": {
-        "normal": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
-        "subtle": {"$value": "{color.neutral.black.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
-        "muted": {"$value": "{color.neutral.black.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}},
-        "disabled": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
-      }
-    },
-    "icon": {
-      "primary": {
-        "normal": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
-        "subtle": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
-        "muted": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
-        "disabled": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}}
-      },
-      "gray": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.1200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
-      },
-      "neutral": {
-        "normal": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}},
-        "subtle": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
-        "muted": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
-        "disabled": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
-      },
-      "positive": {
-        "normal": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.500}"}}}},
-        "muted": {"$value": "{color.chromatic.emerald.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.emerald.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}}
-      },
-      "negative": {
-        "normal": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.crimson.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.500}"}}}},
-        "muted": {"$value": "{color.chromatic.crimson.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.crimson.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a200}"}}}}
-      },
-      "notice": {
-        "normal": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.500}"}}}},
-        "muted": {"$value": "{color.chromatic.cider.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.cider.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a200}"}}}}
-      },
-      "information": {
-        "normal": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}},
-        "subtle": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.500}"}}}},
-        "muted": {"$value": "{color.chromatic.sapphire.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
-        "disabled": {"$value": "{color.chromatic.sapphire.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}}
-      },
-      "onPrimary": {
-        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
-        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
-        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
-        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
-      },
-      "staticWhite": {
-        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
-        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
-        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
-        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
-      },
-      "staticBlack": {
-        "normal": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
-        "subtle": {"$value": "{color.neutral.black.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
-        "muted": {"$value": "{color.neutral.black.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}},
-        "disabled": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
-      }
-    },
-    "hover": {
-      "subtle": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.25}"}}}},
-      "intense": {"$value": "{color.neutral.black.10}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
-    }
-  },
   "feedback": {
     "background": {
-      "neutral": {
-        "subtle": {"$value": "{color.neutral.blueGrayLight.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-        "intense": {"$value": "{color.neutral.blueGrayLight.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}}
-      },
       "positive": {
         "subtle": {"$value": "{color.chromatic.emerald.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}},
         "intense": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}}
@@ -366,13 +117,13 @@
       "information": {
         "subtle": {"$value": "{color.chromatic.sapphire.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}},
         "intense": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}}
+      },
+      "neutral": {
+        "subtle": {"$value": "{color.neutral.blueGrayLight.a909}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a509}"}}}},
+        "intense": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}}
       }
     },
     "border": {
-      "neutral": {
-        "subtle": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-        "intense": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.900}"}}}}
-      },
       "positive": {
         "subtle": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}},
         "intense": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.800}"}}}}
@@ -388,13 +139,13 @@
       "information": {
         "subtle": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}},
         "intense": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.800}"}}}}
+      },
+      "neutral": {
+        "subtle": {"$value": "{color.neutral.blueGrayLight.a918}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}},
+        "intense": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}}
       }
     },
     "text": {
-      "neutral": {
-        "subtle": {"$value": "{color.neutral.blueGrayLight.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.700}"}}}},
-        "intense": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}}
-      },
       "positive": {
         "subtle": {"$value": "{color.chromatic.emerald.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.50}"}}}},
         "intense": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}}
@@ -410,13 +161,13 @@
       "information": {
         "subtle": {"$value": "{color.chromatic.sapphire.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.50}"}}}},
         "intense": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}}
+      },
+      "neutral": {
+        "subtle": {"$value": "{color.neutral.blueGrayLight.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "intense": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}}
       }
     },
     "icon": {
-      "neutral": {
-        "subtle": {"$value": "{color.neutral.blueGrayLight.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.700}"}}}},
-        "intense": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.50}"}}}}
-      },
       "positive": {
         "subtle": {"$value": "{color.chromatic.emerald.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.50}"}}}},
         "intense": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}}
@@ -432,31 +183,522 @@
       "information": {
         "subtle": {"$value": "{color.chromatic.sapphire.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.50}"}}}},
         "intense": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}}
+      },
+      "neutral": {
+        "subtle": {"$value": "{color.neutral.blueGrayLight.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "intense": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}}
+      }
+    }
+  },
+  "interactive": {
+    "background": {
+      "positive": {
+        "default": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.emerald.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.emerald.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a150}"}}}},
+        "fadedHighlighted": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}}
+      },
+      "negative": {
+        "default": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.crimson.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.crimson.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.crimson.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a150}"}}}},
+        "fadedHighlighted": {"$value": "{color.chromatic.crimson.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a200}"}}}}
+      },
+      "notice": {
+        "default": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.cider.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.cider.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a150}"}}}},
+        "fadedHighlighted": {"$value": "{color.chromatic.cider.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a200}"}}}}
+      },
+      "information": {
+        "default": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.sapphire.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.sapphire.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a150}"}}}},
+        "fadedHighlighted": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}}
+      },
+      "neutral": {
+        "default": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "highlighted": {"$value": "{color.neutral.blackSolid.450}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.whiteSolid.450}"}}}},
+        "disabledSolid": {"$value": "{color.neutral.blackSolid.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.whiteSolid.100}"}}}},
+        "disabled": {"$value": "{color.neutral.black.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}},
+        "faded": {"$value": "{color.neutral.blueGrayLight.a912}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}},
+        "fadedHighlighted": {"$value": "{color.neutral.blueGrayLight.a918}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a524}"}}}}
+      },
+      "gray": {
+        "default": {"$value": "{color.neutral.blueGrayLight.a906}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a512}"}}}},
+        "highlighted": {"$value": "{color.neutral.blueGrayLight.a912}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a532}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a906}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a509}"}}}},
+        "faded": {"$value": "{color.neutral.blueGrayLight.a906}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a509}"}}}},
+        "fadedHighlighted": {"$value": "{color.neutral.blueGrayLight.a909}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}},
+        "ghost": {"$value": "{color.neutral.blueGrayLight.a1}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a1388}"}}}}
+      },
+      "primary": {
+        "default": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
+        "highlighted": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
+        "disabled": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a150}"}}}},
+        "faded": {"$value": "{color.chromatic.azure.a50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a150}"}}}},
+        "fadedHighlighted": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}}
+      },
+      "staticBlack": {
+        "default": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "highlighted": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "disabled": {"$value": "{color.neutral.black.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.200}"}}}},
+        "faded": {"$value": "{color.neutral.black.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.50}"}}}},
+        "fadedHighlighted": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}},
+        "ghost": {"$value": "{color.neutral.black.1}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.1}"}}}}
+      },
+      "staticWhite": {
+        "default": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "highlighted": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
+        "disabled": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}},
+        "faded": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}},
+        "fadedHighlighted": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}},
+        "ghost": {"$value": "{color.neutral.white.1}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.1}"}}}}
+      }
+    },
+    "border": {
+      "positive": {
+        "default": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.emerald.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a100}"}}}}
+      },
+      "negative": {
+        "default": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.crimson.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.crimson.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.crimson.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a100}"}}}}
+      },
+      "notice": {
+        "default": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.cider.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.cider.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a100}"}}}}
+      },
+      "information": {
+        "default": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}},
+        "highlighted": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}},
+        "faded": {"$value": "{color.chromatic.sapphire.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a100}"}}}}
+      },
+      "neutral": {
+        "default": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "highlighted": {"$value": "{color.neutral.black.450}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.450}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
+        "faded": {"$value": "{color.neutral.blueGrayLight.a912}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}}
+      },
+      "gray": {
+        "default": {"$value": "{color.neutral.blueGrayLight.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
+        "highlighted": {"$value": "{color.neutral.blueGrayLight.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.700}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}},
+        "faded": {"$value": "{color.neutral.blueGrayLight.a918}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}}
+      },
+      "primary": {
+        "default": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
+        "highlighted": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
+        "disabled": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a200}"}}}},
+        "faded": {"$value": "{color.chromatic.azure.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a150}"}}}}
+      },
+      "staticWhite": {
+        "default": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "highlighted": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}},
+        "faded": {"$value": "{color.neutral.white.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.50}"}}}},
+        "fadedHighlighted": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
+      },
+      "staticBlack": {
+        "default": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "highlighted": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "disabled": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}},
+        "faded": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}},
+        "fadedHighlighted": {"$value": "{color.neutral.black.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.50}"}}}}
+      }
+    },
+    "text": {
+      "positive": {
+        "normal": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.500}"}}}},
+        "muted": {"$value": "{color.chromatic.emerald.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.emerald.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}}
+      },
+      "negative": {
+        "normal": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.crimson.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.500}"}}}},
+        "muted": {"$value": "{color.chromatic.crimson.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.crimson.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a200}"}}}}
+      },
+      "notice": {
+        "normal": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.500}"}}}},
+        "muted": {"$value": "{color.chromatic.cider.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.cider.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a200}"}}}}
+      },
+      "information": {
+        "normal": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.500}"}}}},
+        "muted": {"$value": "{color.chromatic.sapphire.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.sapphire.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}}
+      },
+      "neutral": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.1300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.0}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a932}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a532}"}}}}
+      },
+      "gray": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.1300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.0}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a932}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a532}"}}}}
+      },
+      "primary": {
+        "normal": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
+        "subtle": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
+        "muted": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
+        "disabled": {"$value": "{color.chromatic.azure.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a400}"}}}}
+      },
+      "onPrimary": {
+        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
+        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
+      },
+      "onNeutral": {
+        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
+        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
+      },
+      "staticWhite": {
+        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
+        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
+      },
+      "staticBlack": {
+        "normal": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "subtle": {"$value": "{color.neutral.black.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
+        "muted": {"$value": "{color.neutral.black.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}},
+        "disabled": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
+      }
+    },
+    "icon": {
+      "positive": {
+        "normal": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.500}"}}}},
+        "muted": {"$value": "{color.chromatic.emerald.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.emerald.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a200}"}}}}
+      },
+      "negative": {
+        "normal": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.crimson.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.500}"}}}},
+        "muted": {"$value": "{color.chromatic.crimson.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.crimson.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a200}"}}}}
+      },
+      "notice": {
+        "normal": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.500}"}}}},
+        "muted": {"$value": "{color.chromatic.cider.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.cider.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a200}"}}}}
+      },
+      "information": {
+        "normal": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}},
+        "subtle": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.500}"}}}},
+        "muted": {"$value": "{color.chromatic.sapphire.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
+        "disabled": {"$value": "{color.chromatic.sapphire.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a200}"}}}}
+      },
+      "neutral": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.1300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.0}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a932}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a532}"}}}}
+      },
+      "gray": {
+        "normal": {"$value": "{color.neutral.blueGrayLight.1300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.0}"}}}},
+        "subtle": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+        "muted": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+        "disabled": {"$value": "{color.neutral.blueGrayLight.a932}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a532}"}}}}
+      },
+      "primary": {
+        "normal": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
+        "subtle": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
+        "muted": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
+        "disabled": {"$value": "{color.chromatic.azure.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.a400}"}}}}
+      },
+      "onPrimary": {
+        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
+        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
+      },
+      "onNeutral": {
+        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
+        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
+      },
+      "staticWhite": {
+        "normal": {"$value": "{color.neutral.white.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.500}"}}}},
+        "subtle": {"$value": "{color.neutral.white.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.400}"}}}},
+        "muted": {"$value": "{color.neutral.white.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.300}"}}}},
+        "disabled": {"$value": "{color.neutral.white.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.white.100}"}}}}
+      },
+      "staticBlack": {
+        "normal": {"$value": "{color.neutral.black.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.500}"}}}},
+        "subtle": {"$value": "{color.neutral.black.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
+        "muted": {"$value": "{color.neutral.black.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}},
+        "disabled": {"$value": "{color.neutral.black.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.100}"}}}}
       }
     }
   },
   "overlay": {
     "background": {
-      "subtle": {"$value": "{color.neutral.black.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}},
-      "moderate": {"$value": "{color.neutral.blueGrayLight.a200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a200}"}}}}
+      "moderate": {"$value": "{color.neutral.blueGrayLight.a918}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a518}"}}}},
+      "subtle": {"$value": "{color.neutral.black.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.400}"}}}}
     }
   },
   "popup": {
     "background": {
       "subtle": {"$value": "{color.neutral.blueGrayLight.0}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}},
-      "intense": {"$value": "{color.neutral.blueGrayLight.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}}
+      "intense": {"$value": "{color.neutral.blueGrayLight.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.700}"}}}},
+      "gray": {
+        "subtle": {"$value": "{color.neutral.blueGrayLight.0}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1300}"}}}},
+        "moderate": {"$value": "{color.neutral.blueGrayLight.a48}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a1188}"}}}},
+        "intense": {"$value": "{color.neutral.black.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.black.300}"}}}}
+      },
+      "positive": {
+        "moderate": {"$value": "{color.chromatic.emerald.a700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.a700}"}}}}
+      },
+      "negative": {
+        "moderate": {"$value": "{color.chromatic.crimson.a700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.a700}"}}}}
+      },
+      "notice": {
+        "moderate": {"$value": "{color.chromatic.cider.a700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.a700}"}}}}
+      },
+      "information": {
+        "moderate": {"$value": "{color.chromatic.sapphire.a700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.a700}"}}}}
+      },
+      "neutral": {
+        "moderate": {"$value": "{color.neutral.blueGrayLight.a1288}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a888}"}}}}
+      }
     },
     "border": {
       "subtle": {"$value": "{color.neutral.blueGrayLight.a100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
-      "intense": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}}
+      "intense": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a100}"}}}},
+      "gray": {
+        "subtle": {"$value": "{color.neutral.blueGrayLight.a909}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.a512}"}}}},
+        "moderate": {"$value": "{color.neutral.blueGrayLight.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
+        "intense": {"$value": "{color.neutral.blueGrayLight.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}}
+      },
+      "positive": {
+        "moderate": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}}
+      },
+      "negative": {
+        "moderate": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}}
+      },
+      "notice": {
+        "moderate": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}}
+      },
+      "information": {
+        "moderate": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}}
+      },
+      "neutral": {
+        "moderate": {"$value": "{color.neutral.blueGrayLight.1100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}}
+      }
     }
   },
-  "elevation": {
-    "lowRaised": {"$value": "rgb(25 40 57 / 9%)", "$extensions": {"craft": {"modes": {"onDark": "rgb(12 25 39 / 9%)"}}}},
-    "midRaised": {"$value": "rgb(25 40 57 / 12%)", "$extensions": {"craft": {"modes": {"onDark": "rgb(12 25 39 / 12%)"}}}},
-    "highRaised": {"$value": "rgb(25 40 57 / 18%)", "$extensions": {"craft": {"modes": {"onDark": "rgb(12 25 39 / 18%)"}}}},
-    "_bottomSheet": {"$value": "rgb(25 40 57 / 18%)", "$extensions": {"craft": {"modes": {"onDark": "rgb(12 25 39 / 18%)"}}}},
-    "_toast": {"$value": "rgb(255 255 255 / 64%)", "$extensions": {"craft": {"modes": {"onDark": "rgb(36 53 71 / 64%)"}}}}
+  "data": {
+    "background": {
+      "categorical": {
+        "blue": {
+          "faint": {"$value": "{color.chromatic.azure.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.azure.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.azure.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
+          "intense": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
+          "strong": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}}
+        },
+        "green": {
+          "faint": {"$value": "{color.chromatic.emerald.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.emerald.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.emerald.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}},
+          "intense": {"$value": "{color.chromatic.emerald.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.500}"}}}},
+          "strong": {"$value": "{color.chromatic.emerald.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}}
+        },
+        "red": {
+          "faint": {"$value": "{color.chromatic.crimson.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.crimson.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.crimson.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}},
+          "intense": {"$value": "{color.chromatic.crimson.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.500}"}}}},
+          "strong": {"$value": "{color.chromatic.crimson.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.400}"}}}}
+        },
+        "orange": {
+          "faint": {"$value": "{color.chromatic.cider.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.cider.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.cider.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}},
+          "intense": {"$value": "{color.chromatic.cider.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.500}"}}}},
+          "strong": {"$value": "{color.chromatic.cider.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.400}"}}}}
+        },
+        "skyBlue": {
+          "faint": {"$value": "{color.chromatic.sapphire.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.sapphire.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.sapphire.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}},
+          "intense": {"$value": "{color.chromatic.sapphire.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.500}"}}}},
+          "strong": {"$value": "{color.chromatic.sapphire.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}}
+        },
+        "purple": {
+          "faint": {"$value": "{color.chromatic.orchid.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.orchid.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.orchid.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.600}"}}}},
+          "intense": {"$value": "{color.chromatic.orchid.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.500}"}}}},
+          "strong": {"$value": "{color.chromatic.orchid.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.400}"}}}}
+        },
+        "pink": {
+          "faint": {"$value": "{color.chromatic.magenta.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.800}"}}}},
+          "subtle": {"$value": "{color.chromatic.magenta.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.700}"}}}},
+          "moderate": {"$value": "{color.chromatic.magenta.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.600}"}}}},
+          "intense": {"$value": "{color.chromatic.magenta.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.500}"}}}},
+          "strong": {"$value": "{color.chromatic.magenta.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.400}"}}}}
+        },
+        "gold": {
+          "faint": {"$value": "{color.chromatic.topaz.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.700}"}}}},
+          "subtle": {"$value": "{color.chromatic.topaz.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.600}"}}}},
+          "moderate": {"$value": "{color.chromatic.topaz.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.500}"}}}},
+          "intense": {"$value": "{color.chromatic.topaz.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.400}"}}}},
+          "strong": {"$value": "{color.chromatic.topaz.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.300}"}}}}
+        },
+        "gray": {
+          "faint": {"$value": "{color.neutral.blueGrayLight.0}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1200}"}}}},
+          "subtle": {"$value": "{color.neutral.blueGrayLight.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}},
+          "moderate": {"$value": "{color.neutral.blueGrayLight.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.900}"}}}},
+          "intense": {"$value": "{color.neutral.blueGrayLight.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}},
+          "strong": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}}
+        }
+      },
+      "sequential": {
+        "blue": {
+          "50": {"$value": "{color.chromatic.azure.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.1000}"}}}},
+          "100": {"$value": "{color.chromatic.azure.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.900}"}}}},
+          "200": {"$value": "{color.chromatic.azure.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.800}"}}}},
+          "300": {"$value": "{color.chromatic.azure.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.700}"}}}},
+          "400": {"$value": "{color.chromatic.azure.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.600}"}}}},
+          "500": {"$value": "{color.chromatic.azure.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.500}"}}}},
+          "600": {"$value": "{color.chromatic.azure.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.400}"}}}},
+          "700": {"$value": "{color.chromatic.azure.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.300}"}}}},
+          "800": {"$value": "{color.chromatic.azure.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.200}"}}}},
+          "900": {"$value": "{color.chromatic.azure.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.100}"}}}},
+          "1000": {"$value": "{color.chromatic.azure.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.azure.50}"}}}}
+        },
+        "green": {
+          "50": {"$value": "{color.chromatic.emerald.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.1000}"}}}},
+          "100": {"$value": "{color.chromatic.emerald.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.900}"}}}},
+          "200": {"$value": "{color.chromatic.emerald.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.800}"}}}},
+          "300": {"$value": "{color.chromatic.emerald.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.700}"}}}},
+          "400": {"$value": "{color.chromatic.emerald.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.600}"}}}},
+          "500": {"$value": "{color.chromatic.emerald.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.500}"}}}},
+          "600": {"$value": "{color.chromatic.emerald.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.400}"}}}},
+          "700": {"$value": "{color.chromatic.emerald.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.300}"}}}},
+          "800": {"$value": "{color.chromatic.emerald.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.200}"}}}},
+          "900": {"$value": "{color.chromatic.emerald.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.100}"}}}},
+          "1000": {"$value": "{color.chromatic.emerald.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.emerald.50}"}}}}
+        },
+        "red": {
+          "50": {"$value": "{color.chromatic.crimson.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.1000}"}}}},
+          "100": {"$value": "{color.chromatic.crimson.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.900}"}}}},
+          "200": {"$value": "{color.chromatic.crimson.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.800}"}}}},
+          "300": {"$value": "{color.chromatic.crimson.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.700}"}}}},
+          "400": {"$value": "{color.chromatic.crimson.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.600}"}}}},
+          "500": {"$value": "{color.chromatic.crimson.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.500}"}}}},
+          "600": {"$value": "{color.chromatic.crimson.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.400}"}}}},
+          "700": {"$value": "{color.chromatic.crimson.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.300}"}}}},
+          "800": {"$value": "{color.chromatic.crimson.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.200}"}}}},
+          "900": {"$value": "{color.chromatic.crimson.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.100}"}}}},
+          "1000": {"$value": "{color.chromatic.crimson.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.crimson.50}"}}}}
+        },
+        "orange": {
+          "50": {"$value": "{color.chromatic.cider.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.1000}"}}}},
+          "100": {"$value": "{color.chromatic.cider.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.900}"}}}},
+          "200": {"$value": "{color.chromatic.cider.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.800}"}}}},
+          "300": {"$value": "{color.chromatic.cider.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.700}"}}}},
+          "400": {"$value": "{color.chromatic.cider.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.600}"}}}},
+          "500": {"$value": "{color.chromatic.cider.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.500}"}}}},
+          "600": {"$value": "{color.chromatic.cider.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.400}"}}}},
+          "700": {"$value": "{color.chromatic.cider.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.300}"}}}},
+          "800": {"$value": "{color.chromatic.cider.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.200}"}}}},
+          "900": {"$value": "{color.chromatic.cider.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.100}"}}}},
+          "1000": {"$value": "{color.chromatic.cider.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.cider.50}"}}}}
+        },
+        "skyBlue": {
+          "50": {"$value": "{color.chromatic.sapphire.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.1000}"}}}},
+          "100": {"$value": "{color.chromatic.sapphire.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.900}"}}}},
+          "200": {"$value": "{color.chromatic.sapphire.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.800}"}}}},
+          "300": {"$value": "{color.chromatic.sapphire.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.700}"}}}},
+          "400": {"$value": "{color.chromatic.sapphire.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.600}"}}}},
+          "500": {"$value": "{color.chromatic.sapphire.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.500}"}}}},
+          "600": {"$value": "{color.chromatic.sapphire.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.400}"}}}},
+          "700": {"$value": "{color.chromatic.sapphire.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.300}"}}}},
+          "800": {"$value": "{color.chromatic.sapphire.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.200}"}}}},
+          "900": {"$value": "{color.chromatic.sapphire.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.100}"}}}},
+          "1000": {"$value": "{color.chromatic.sapphire.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.sapphire.50}"}}}}
+        },
+        "purple": {
+          "50": {"$value": "{color.chromatic.orchid.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.1000}"}}}},
+          "100": {"$value": "{color.chromatic.orchid.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.900}"}}}},
+          "200": {"$value": "{color.chromatic.orchid.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.800}"}}}},
+          "300": {"$value": "{color.chromatic.orchid.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.700}"}}}},
+          "400": {"$value": "{color.chromatic.orchid.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.600}"}}}},
+          "500": {"$value": "{color.chromatic.orchid.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.500}"}}}},
+          "600": {"$value": "{color.chromatic.orchid.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.400}"}}}},
+          "700": {"$value": "{color.chromatic.orchid.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.300}"}}}},
+          "800": {"$value": "{color.chromatic.orchid.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.200}"}}}},
+          "900": {"$value": "{color.chromatic.orchid.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.100}"}}}},
+          "1000": {"$value": "{color.chromatic.orchid.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.orchid.50}"}}}}
+        },
+        "pink": {
+          "50": {"$value": "{color.chromatic.magenta.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.1000}"}}}},
+          "100": {"$value": "{color.chromatic.magenta.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.900}"}}}},
+          "200": {"$value": "{color.chromatic.magenta.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.800}"}}}},
+          "300": {"$value": "{color.chromatic.magenta.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.700}"}}}},
+          "400": {"$value": "{color.chromatic.magenta.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.600}"}}}},
+          "500": {"$value": "{color.chromatic.magenta.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.500}"}}}},
+          "600": {"$value": "{color.chromatic.magenta.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.400}"}}}},
+          "700": {"$value": "{color.chromatic.magenta.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.300}"}}}},
+          "800": {"$value": "{color.chromatic.magenta.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.200}"}}}},
+          "900": {"$value": "{color.chromatic.magenta.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.100}"}}}},
+          "1000": {"$value": "{color.chromatic.magenta.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.magenta.50}"}}}}
+        },
+        "gold": {
+          "50": {"$value": "{color.chromatic.topaz.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.1000}"}}}},
+          "100": {"$value": "{color.chromatic.topaz.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.900}"}}}},
+          "200": {"$value": "{color.chromatic.topaz.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.800}"}}}},
+          "300": {"$value": "{color.chromatic.topaz.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.700}"}}}},
+          "400": {"$value": "{color.chromatic.topaz.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.600}"}}}},
+          "500": {"$value": "{color.chromatic.topaz.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.500}"}}}},
+          "600": {"$value": "{color.chromatic.topaz.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.400}"}}}},
+          "700": {"$value": "{color.chromatic.topaz.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.300}"}}}},
+          "800": {"$value": "{color.chromatic.topaz.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.200}"}}}},
+          "900": {"$value": "{color.chromatic.topaz.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.100}"}}}},
+          "1000": {"$value": "{color.chromatic.topaz.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.chromatic.topaz.50}"}}}}
+        },
+        "gray": {
+          "0": {"$value": "{color.neutral.blueGrayLight.0}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1300}"}}}},
+          "50": {"$value": "{color.neutral.blueGrayLight.50}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1200}"}}}},
+          "100": {"$value": "{color.neutral.blueGrayLight.100}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1100}"}}}},
+          "200": {"$value": "{color.neutral.blueGrayLight.200}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.1000}"}}}},
+          "300": {"$value": "{color.neutral.blueGrayLight.300}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.900}"}}}},
+          "400": {"$value": "{color.neutral.blueGrayLight.400}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
+          "500": {"$value": "{color.neutral.blueGrayLight.500}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.800}"}}}},
+          "600": {"$value": "{color.neutral.blueGrayLight.600}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.700}"}}}},
+          "700": {"$value": "{color.neutral.blueGrayLight.700}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.600}"}}}},
+          "800": {"$value": "{color.neutral.blueGrayLight.800}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.500}"}}}},
+          "900": {"$value": "{color.neutral.blueGrayLight.900}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.400}"}}}},
+          "1000": {"$value": "{color.neutral.blueGrayLight.1000}", "$extensions": {"craft": {"modes": {"onDark": "{color.neutral.blueGrayDark.300}"}}}}
+        }
+      }
+    }
   },
-  "transparent": {"$value": "rgb(255 255 255 / 0%)", "$extensions": {"craft": {"modes": {"onDark": "rgb(255 255 255 / 0%)"}}}}
+  "transparent": {"$value": "hsla(0, 0%, 100%, 0)", "$extensions": {"craft": {"modes": {"onDark": "hsla(210, 6%, 13%, 0)"}}}}
 }
