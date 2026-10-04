@@ -18,7 +18,7 @@ The master record of design values. Figma variables, code, and docs are generate
 - Tokens are listed in natural order: solid steps first, then alpha steps, each from low to high. Figma variables are created in the same order.
 - A value in braces, like `{color.chromatic.azure.500}`, points to another token.
 - In semantic tokens, `$value` is the light theme (onLight). The dark theme (onDark) is under `$extensions.craft.modes.onDark`. The pilot builds light only.
-- Typography sizes and line heights hold the desktop value in `$value` and the mobile value under `$extensions.craft.modes.onMobile`. Letter spacing is a percent string. Text styles are `typography` tokens whose parts are pointers to primitives.
+- Typography sizes and line heights hold the desktop value in `$value` and the mobile value under `$extensions.craft.modes.onMobile`. Letter spacing is a percent string. Font family tokens carry `$extensions.craft.figmaFontFamily`, the name Figma uses (the CSS fallback list stays in `$value`). `npm run tokens:typography` in `packages/ui` prints the parity checksum to compare with Figma. Text styles are `typography` tokens whose parts are pointers to primitives.
 - Raw tokens (5 elevation colors and transparent) hold a color value instead of a pointer.
 
 ## Attribution
