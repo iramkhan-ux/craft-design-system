@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Craft React components and Storybook (pilot: Blade reference).",
   "scripts": {
-    "tokens": "node scripts/build-tokens.mjs && node scripts/build-typography.mjs && node scripts/typography-checksum.mjs && node scripts/build-spacing.mjs",
+    "tokens": "node scripts/build-tokens.mjs && node scripts/build-typography.mjs && node scripts/typography-checksum.mjs && node scripts/build-spacing.mjs && node scripts/build-elevation.mjs",
     "storybook": "npm run tokens && storybook dev -p 6006",
     "build-storybook": "npm run tokens && storybook build",
     "typecheck": "npm run tokens && tsc --noEmit",
@@ -14,6 +14,7 @@
     "visual": "npm run build-storybook && playwright test",
     "visual:update": "npm run build-storybook && playwright test --update-snapshots",
     "tokens:typography": "node scripts/typography-checksum.mjs",
+    "docs:elevation": "npm run tokens && node scripts/build-docs-elevation.mjs",
     "docs:spacing": "npm run tokens && node scripts/build-docs-spacing.mjs",
     "docs:color": "node scripts/build-docs-color.mjs",
     "docs:typography": "npm run tokens && node scripts/build-docs-typography.mjs"
