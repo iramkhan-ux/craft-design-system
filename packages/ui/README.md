@@ -17,7 +17,7 @@ Storybook opens at http://localhost:6006. Open **Foundations / Color**.
 - The master record is `/tokens`. Nothing in this package holds color values by hand.
 - `npm run tokens` turns `/tokens` into CSS variables (`--craft-color-...`) and typed data in `src/tokens/generated`. It runs before Storybook starts. Those files are not committed.
 - It prints a checksum for the primitives and the semantic tokens. They must match the checkpoint log in `process/checkpoints.md`.
-- Semantic tokens switch with `data-theme="light"` or `data-theme="dark"`. Primitives are internal and are never used by components.
+- Primitives are internal and are never used by components. Semantic tokens switch with `data-theme="light"` or `data-theme="dark"`.
 
 ## Scripts
 
