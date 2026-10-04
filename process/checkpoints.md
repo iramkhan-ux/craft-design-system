@@ -10,8 +10,11 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Checkpoint | Approved | Approved by | Repo tag | Figma file | Figma version name | Figma version id |
 |---|---|---|---|---|---|---|
 | Color foundation v1 | 2026-10-02 | Iram Khan | `color-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Color foundation v1 - approved 2026-10-02 | `2405764423188314934` |
+| Typography foundation v1 | 2026-10-05 | Iram Khan | `typography-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Typography foundation v1 - approved 2026-10-05 | `2406570588531573574` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
+
+Typography foundation v1 covers 39 typography primitives (checksum `2d3e10fd`) and 45 text styles (checksum `89013431`), plus the Color and Typography specimens in the Figma file. The Figma version was saved after the color and typography Documentation panels were removed.
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 

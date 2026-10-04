@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Typography foundation v1 checkpoint: repo tag `typography-foundation-v1` and Figma version "Typography foundation v1 - approved 2026-10-05" recorded in `process/checkpoints.md`. Approved by Iram Khan, 2026-10-05.
 - Colors page and docs now show primitives first, then semantic tokens: Storybook story order, `docs/color.md` section order, and the `packages/ui` README. Approved by Iram Khan, 2026-10-05.
 - Documentation stays in the repo: Figma Documentation panels removed from the Color and Typography pages, and Figma guardrail 9 withdrawn (Figma guardrails back to 3 rules). Decision 0002 updated (decision 10 now says documentation lives in the repo). Also corrects letter spacing in code to pixels per style, as Blade does, instead of em. Approved by Iram Khan, 2026-10-05.
 - Typography in Figma: `_typography-primitives` (39 variables), 45 text styles, and a Typography page with a Documentation panel. The Color page also gets a Documentation panel. Decisions 7 to 10 added to 0002 (family names only in Figma, Roboto Mono for Code in Figma, letter spacing set per style as a percent, documentation kept in step). Figma guardrail 9 added. Parity checksum script added. Approved by Iram Khan, 2026-10-05.
