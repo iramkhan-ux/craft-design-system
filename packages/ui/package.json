@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Craft React components and Storybook (pilot: Blade reference).",
   "scripts": {
-    "tokens": "node scripts/build-tokens.mjs",
+    "tokens": "node scripts/build-tokens.mjs && node scripts/build-typography.mjs && node scripts/typography-checksum.mjs",
     "storybook": "npm run tokens && storybook dev -p 6006",
     "build-storybook": "npm run tokens && storybook build",
     "typecheck": "npm run tokens && tsc --noEmit",
@@ -13,7 +13,8 @@
     "test": "npm run tokens && vitest run",
     "visual": "npm run build-storybook && playwright test",
     "visual:update": "npm run build-storybook && playwright test --update-snapshots",
-    "tokens:typography": "node scripts/typography-checksum.mjs"
+    "tokens:typography": "node scripts/typography-checksum.mjs",
+    "docs:typography": "npm run tokens && node scripts/build-docs-typography.mjs"
   },
   "dependencies": {
     "react": "^19.3.0",
@@ -21,6 +22,9 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@fontsource/inter": "^5.3.0",
+    "@fontsource/roboto-mono": "^5.3.0",
+    "@fontsource/tasa-orbiter": "^5.3.0",
     "@playwright/test": "^1.63.0",
     "@storybook/addon-a11y": "^10.6.1",
     "@storybook/addon-docs": "^10.6.1",
