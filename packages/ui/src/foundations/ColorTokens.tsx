@@ -13,8 +13,10 @@ const checker =
 const v = (name: string) => `var(--craft-color-${name})`;
 
 function opacityOf(value: string): string | null {
-  const m = /\/ (\d+)%\)$/.exec(value);
-  return m && m[1] !== '100' ? `${m[1]}%` : null;
+  const m = /^hsla\(.*, ([\d.]+)\)$/.exec(value);
+  if (!m) return null;
+  const pct = Math.round(Number(m[1]) * 100);
+  return pct === 100 ? null : `${pct}%`;
 }
 
 function Swatch({ color }: { color: string }) {
@@ -85,6 +87,7 @@ const TOP: Record<string, string> = {
   overlay: 'Overlay',
   popup: 'Popup',
   elevation: 'Elevation',
+  data: 'Data',
   transparent: 'Transparent',
 };
 const cap = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);

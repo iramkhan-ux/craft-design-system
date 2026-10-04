@@ -29,6 +29,7 @@ Storybook opens at http://localhost:6006. Open **Foundations / Color**.
 | `npm run typecheck` | Build tokens, then check types |
 | `npm test` | Run every story as a test, with accessibility checks, in a real browser |
 | `npm run visual` | Compare every story with the approved images (Linux CI makes the approved images) |
+| `npm run docs:color` | Regenerate `docs/color.md` from the tokens |
 | `npm run docs:typography` | Regenerate `docs/typography.md` from the tokens |
 | `npm run lint` | Build tokens, then lint. Raw color values are an error. |
 

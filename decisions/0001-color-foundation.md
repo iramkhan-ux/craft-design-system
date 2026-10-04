@@ -6,9 +6,12 @@ status: approved
 decided_by: Iram Khan (iramkhan-ux)
 date: 2026-10-01
 supersedes:
+superseded_in_part_by: 0004 (decisions 2 and 3)
 ---
 
 ## Context
+
+> Decisions 2 and 3 below were replaced by [0004 Color from Blade source](0004-color-from-blade-source.md), which rebuilt the palette and token set from Blade source code. The text below is kept as the record of what was decided on 2026-10-01.
 
 First foundation of the Craft pilot. The pilot recreates the Razorpay Blade Design System (web, light theme) to test the Craft process. Decisions below were inferred by agents from the Blade Figma file and confirmed by the designer. Reference: Blade Figma file key `DFWv8krfnXUUCMOIW1ME1O` (Community copy).
 
