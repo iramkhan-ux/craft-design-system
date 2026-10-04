@@ -12,7 +12,8 @@
     "lint": "npm run tokens && eslint .",
     "test": "npm run tokens && vitest run",
     "visual": "npm run build-storybook && playwright test",
-    "visual:update": "npm run build-storybook && playwright test --update-snapshots"
+    "visual:update": "npm run build-storybook && playwright test --update-snapshots",
+    "tokens:typography": "node scripts/typography-checksum.mjs"
   },
   "dependencies": {
     "react": "^19.3.0",

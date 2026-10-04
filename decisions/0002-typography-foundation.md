@@ -22,10 +22,16 @@ Second foundation of the Craft pilot. Values are read from Blade's source (`blad
 | 4 | Fonts: Inter for Body and Caption, TASA Orbiter for Display and Heading, Menlo for Code. |
 | 5 | Blade has different desktop and mobile values. The pilot is web only, so desktop is the main value. Mobile values are kept in the tokens under `$extensions.craft.modes.onMobile`, so mobile does not need restructuring later. |
 | 6 | Real fonts are loaded in Storybook once their licenses are confirmed. |
+| 7 | In Figma, font family variables hold the font name only (Inter, TASA Orbiter, Roboto Mono). The CSS fallback lists live in code. |
+| 8 | Figma uses Roboto Mono for Code, because Menlo is an Apple system font that Figma cannot use. Roboto Mono is also in Blade's own fallback list. In code, Menlo stays first. |
+| 9 | Letter spacing is set as a percent directly on each Figma text style and is not tied to a variable. Percent stays the stored value in the tokens. In code it is converted to em (percent divided by 100). |
+| 10 | Every decision that affects a Figma page is written in that page's Documentation panel (see Figma guardrail 9). |
 
 ## Exceptions and oddities
 
-- Letter spacing is stored as a percent string (`-3.3%`) because that is how Blade and Figma express it.
+- Letter spacing is stored as a percent string (`-3.3%`) because that is how Blade and Figma express it. Em was considered and rejected: the token format (DTCG) allows only px and rem, and percent matches Blade and Figma. Em is derived for CSS.
+- Figma applies a variable-tied letter spacing in pixels, not percent (measured: the same 43-character line at 48px was 961px wide with -1.3% set directly and 932px with -1.3 tied to a variable). So letter spacing is set directly on each style. The `font/letterSpacing` variables are reference values only.
+- Font family tokens carry `$extensions.craft.figmaFontFamily`, the exact name Figma uses. This is how the Figma parity check reads them.
 - Display letter spacing is -1.3% for regular and medium, and 0% for semibold. Copied as-is from Blade.
 - Caption medium uses a 14px font size with a 16px line height (font size 100, line height 50). Copied as-is from Blade for parity.
 - Code sizes: small is 10px, medium is 12px (Blade names are inverted relative to Body, where 10px is xsmall).
@@ -34,12 +40,12 @@ Second foundation of the Craft pilot. Values are read from Blade's source (`blad
 
 ## Rules confirmed
 
-See `skills/guardrails/typography.md` (4 rules, confirmed 2026-10-03).
+See `skills/guardrails/typography.md` (4 rules, confirmed 2026-10-03) and Figma guardrail 9 in `skills/guardrails/figma.md`.
 
 ## Downstream artifacts
 
 - Tokens: `tokens/typography.primitives.json`, `tokens/typography.styles.json` (this pull request)
-- Figma: pending
+- Figma: built in the Craft file (`_typography-primitives`, 45 text styles, Typography page with its Documentation panel). Parity checksum matches: primitives 2d3e10fd (39), styles 89013431 (45). Checkpoint pending the designer's review.
 - Code / Storybook: pending
 - Docs: pending
 - Changelog: entry added in this pull request

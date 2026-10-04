@@ -3,13 +3,28 @@
     "family": {
       "$type": "fontFamily",
       "text": {
-        "$value": "\"Inter\", \"Inter Fallback Arial\", Arial"
+        "$value": "\"Inter\", \"Inter Fallback Arial\", Arial",
+        "$extensions": {
+          "craft": {
+            "figmaFontFamily": "Inter"
+          }
+        }
       },
       "heading": {
-        "$value": "\"TASA Orbiter\", \"TASA Orbiter Fallback Arial\", Arial"
+        "$value": "\"TASA Orbiter\", \"TASA Orbiter Fallback Arial\", Arial",
+        "$extensions": {
+          "craft": {
+            "figmaFontFamily": "TASA Orbiter"
+          }
+        }
       },
       "code": {
-        "$value": "\"Menlo\", San Francisco Mono, Courier New, Roboto Mono, monospace"
+        "$value": "\"Menlo\", San Francisco Mono, Courier New, Roboto Mono, monospace",
+        "$extensions": {
+          "craft": {
+            "figmaFontFamily": "Roboto Mono"
+          }
+        }
       }
     },
     "size": {
