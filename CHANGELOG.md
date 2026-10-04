@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Typography in Storybook and docs: Foundations / Typography (Primitives first, then Text styles), 45 CSS classes generated from the tokens, Inter, TASA Orbiter and Roboto Mono loaded from open-source (OFL-1.1) packages, and `docs/typography.md` generated from the tokens. The first docs generator now lives in the repo (`npm run docs:typography`). Approved by Iram Khan, 2026-10-05.
 - Typography foundation v1 checkpoint: repo tag `typography-foundation-v1` and Figma version "Typography foundation v1 - approved 2026-10-05" recorded in `process/checkpoints.md`. Approved by Iram Khan, 2026-10-05.
 - Colors page and docs now show primitives first, then semantic tokens: Storybook story order, `docs/color.md` section order, and the `packages/ui` README. Approved by Iram Khan, 2026-10-05.
 - Documentation stays in the repo: Figma Documentation panels removed from the Color and Typography pages, and Figma guardrail 9 withdrawn (Figma guardrails back to 3 rules). Decision 0002 updated (decision 10 now says documentation lives in the repo). Also corrects letter spacing in code to pixels per style, as Blade does, instead of em. Approved by Iram Khan, 2026-10-05.
