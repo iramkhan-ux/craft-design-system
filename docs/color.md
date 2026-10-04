@@ -6,7 +6,8 @@ Source decision: [0001 Color foundation](../decisions/0001-color-foundation.md).
 
 ## How to use color
 
-- **Pick semantic tokens only.** They carry meaning (text, border, background) and switch between the light and dark theme. Primitives are raw values and stay internal.
+- **Primitives are internal.** They are raw values that semantic tokens point to, and stay out of designs and components.
+- **Pick semantic tokens only.** They carry meaning (text, border, background) and switch between the light and dark theme.
 - **Names.** Figma shows tokens with slashes, for example `surface/background/primary/subtle`. Code and these tables use dots.
 - **Light and dark.** Each token lists its light value and its dark value. The pilot builds the light theme in Figma and code. Dark values are recorded for later.
 - **Swatches.** Translucent colors are previewed flattened on white (light) or on the dark page color `blueGrayDark.1300` (dark). The percentage is the real opacity.
@@ -26,6 +27,27 @@ Source decision: [0001 Color foundation](../decisions/0001-color-foundation.md).
 | 8 | Figma variables are created in natural order (low to high, solid steps before alpha steps). |
 
 Full reasons and confirmations: [color](../skills/guardrails/color.md), [Figma](../skills/guardrails/figma.md).
+
+## Primitives (internal)
+
+Raw colors that semantic tokens point to. Listed for reference only. Do not use them directly. Solid steps run from low to high. Alpha steps (`a50`, `a100` and so on) are the same color at a lower opacity, shown as a percentage.
+
+| Family | Solid steps | Alpha steps |
+|---|---|---|
+| `azure` | 50 `#f5f8ff`, 100 `#d8e4fd`, 200 `#b4cdfd`, 300 `#75a3ff`, 400 `#4d7fff`, 500 `#305eff`, 600 `#2950da`, 700 `#2243b6`, 800 `#1b3591`, 900 `#14286d`, 1000 `#0d1a48` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `emerald` | 50 `#ebfaf3`, 100 `#daf5e8`, 200 `#b6ecd1`, 300 `#91e3ba`, 400 `#48d08c`, 500 `#00be5f`, 600 `#00a251`, 700 `#008743`, 800 `#006c36`, 900 `#005128`, 1000 `#00361b` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `crimson` | 50 `#fff5f5`, 100 `#fee4e2`, 200 `#fec6c3`, 300 `#fd9d96`, 400 `#f96c62`, 500 `#f04438`, 600 `#d92d20`, 700 `#b42318`, 800 `#9a0e0e`, 900 `#880c0c`, 1000 `#750a0a` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `cider` | 50 `#fff3eb`, 100 `#ffe1cc`, 200 `#ffc499`, 300 `#ffac70`, 400 `#ff9040`, 500 `#ff7a1a`, 600 `#e9690c`, 700 `#c65c10`, 800 `#a24d10`, 900 `#813e0e`, 1000 `#5d2c09` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `sapphire` | 50 `#e7f6fe`, 100 `#cfedfc`, 200 `#a8dffa`, 300 `#79cef8`, 400 `#57c1f6`, 500 `#15b0f3`, 600 `#1291d0`, 700 `#0f78ad`, 800 `#0c608a`, 900 `#094868`, 1000 `#063145` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `sea` | 50 `#edf7f7`, 100 `#e2f3f3`, 200 `#c2e0e0`, 300 `#97cdcd`, 400 `#60a9a9`, 500 `#389494`, 600 `#1f7a7a`, 700 `#1d6363`, 800 `#145252`, 900 `#033e3e`, 1000 `#022929` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `cloud` | 50 `#edf4f7`, 100 `#e6eff4`, 200 `#cbdde6`, 300 `#97bbcd`, 400 `#6091a9`, 500 `#387594`, 600 `#1f5c7a`, 700 `#1d4b63`, 800 `#143d52`, 900 `#032a3e`, 1000 `#021c29` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `forest` | 50 `#ebfaf3`, 100 `#daf5e8`, 200 `#b6ecd1`, 300 `#91e3ba`, 400 `#48d08c`, 500 `#00be6f`, 600 `#009e5c`, 700 `#00874f`, 800 `#006c3f`, 900 `#00512f`, 1000 `#003821` | a50 9%, a100 18%, a150 24%, a200 32% |
+| `blueGrayLight` | 0 `#ffffff`, 50 `#f8fafc`, 100 `#f1f5fa`, 200 `#e3eaf3`, 300 `#cbd5e2`, 400 `#b1c1d2`, 500 `#90a5bb`, 600 `#768ea7`, 700 `#6c849d`, 800 `#58728d`, 900 `#40566d`, 1000 `#2f4256`, 1100 `#243547`, 1200 `#192839`, 1300 `#0c1927` | a25 6%, a50 9%, a75 12%, a100 18%, a200 32%, a400 64% |
+| `blueGrayDark` | 0 `#fcfcfd`, 50 `#f8fafc`, 100 `#f1f5fa`, 200 `#e3eaf3`, 300 `#cbd5e2`, 400 `#b1c1d2`, 500 `#90a5bb`, 600 `#768ea7`, 700 `#6c849d`, 800 `#58728d`, 900 `#40566d`, 1000 `#2f4256`, 1100 `#243547`, 1200 `#192839`, 1300 `#0c1927` | a25 6%, a50 9%, a75 12%, a100 18%, a200 32%, a400 64% |
+| `ashGrayLight` | 0 `#ffffff`, 50 `#f9f9fa`, 100 `#f3f4f5`, 200 `#eeeff0`, 300 `#e3e4e5`, 400 `#cacdd1`, 500 `#acb0b6`, 600 `#9499a0`, 700 `#858b93`, 800 `#6b717a`, 900 `#545a64`, 1000 `#3f4550`, 1100 `#282e36`, 1200 `#1c2026`, 1300 `#0b0e12` | a25 6%, a50 9%, a75 9%, a100 18%, a200 32%, a400 32% |
+| `ashGrayDark` | 0 `#fcfcfc`, 50 `#e9e9ea`, 100 `#d5d5d6`, 200 `#bfc0c4`, 300 `#95979e`, 400 `#7a7c85`, 500 `#62636a`, 600 `#4e4f56`, 700 `#34353a`, 800 `#2e2f34`, 900 `#28292e`, 1000 `#232429`, 1100 `#1b1c22`, 1200 `#111218`, 1300 `#0a0a0b` | a25 6%, a50 9%, a75 9%, a100 18%, a200 32%, a400 32% |
+| `white` | 500 `#ffffff` | 10 9%, 25 12%, 50 18%, 100 32%, 200 48%, 300 64%, 400 80%, 450 88% |
+| `black` | 500 `#000000` | 10 9%, 25 12%, 50 18%, 100 32%, 200 56%, 300 72%, 400 80%, 450 88% |
 
 ## Semantic tokens
 
@@ -381,24 +403,3 @@ Full reasons and confirmations: [color](../skills/guardrails/color.md), [Figma](
 | Token | Light | Dark |
 |---|---|---|
 | `transparent` | ![](https://placehold.co/14/ffffff) `rgb(255 255 255)` 0% | ![](https://placehold.co/14/0c1927) `rgb(255 255 255)` 0% |
-
-## Primitives (internal)
-
-Raw colors that semantic tokens point to. Listed for reference only. Do not use them directly. Solid steps run from low to high. Alpha steps (`a50`, `a100` and so on) are the same color at a lower opacity, shown as a percentage.
-
-| Family | Solid steps | Alpha steps |
-|---|---|---|
-| `azure` | 50 `#f5f8ff`, 100 `#d8e4fd`, 200 `#b4cdfd`, 300 `#75a3ff`, 400 `#4d7fff`, 500 `#305eff`, 600 `#2950da`, 700 `#2243b6`, 800 `#1b3591`, 900 `#14286d`, 1000 `#0d1a48` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `emerald` | 50 `#ebfaf3`, 100 `#daf5e8`, 200 `#b6ecd1`, 300 `#91e3ba`, 400 `#48d08c`, 500 `#00be5f`, 600 `#00a251`, 700 `#008743`, 800 `#006c36`, 900 `#005128`, 1000 `#00361b` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `crimson` | 50 `#fff5f5`, 100 `#fee4e2`, 200 `#fec6c3`, 300 `#fd9d96`, 400 `#f96c62`, 500 `#f04438`, 600 `#d92d20`, 700 `#b42318`, 800 `#9a0e0e`, 900 `#880c0c`, 1000 `#750a0a` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `cider` | 50 `#fff3eb`, 100 `#ffe1cc`, 200 `#ffc499`, 300 `#ffac70`, 400 `#ff9040`, 500 `#ff7a1a`, 600 `#e9690c`, 700 `#c65c10`, 800 `#a24d10`, 900 `#813e0e`, 1000 `#5d2c09` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `sapphire` | 50 `#e7f6fe`, 100 `#cfedfc`, 200 `#a8dffa`, 300 `#79cef8`, 400 `#57c1f6`, 500 `#15b0f3`, 600 `#1291d0`, 700 `#0f78ad`, 800 `#0c608a`, 900 `#094868`, 1000 `#063145` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `sea` | 50 `#edf7f7`, 100 `#e2f3f3`, 200 `#c2e0e0`, 300 `#97cdcd`, 400 `#60a9a9`, 500 `#389494`, 600 `#1f7a7a`, 700 `#1d6363`, 800 `#145252`, 900 `#033e3e`, 1000 `#022929` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `cloud` | 50 `#edf4f7`, 100 `#e6eff4`, 200 `#cbdde6`, 300 `#97bbcd`, 400 `#6091a9`, 500 `#387594`, 600 `#1f5c7a`, 700 `#1d4b63`, 800 `#143d52`, 900 `#032a3e`, 1000 `#021c29` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `forest` | 50 `#ebfaf3`, 100 `#daf5e8`, 200 `#b6ecd1`, 300 `#91e3ba`, 400 `#48d08c`, 500 `#00be6f`, 600 `#009e5c`, 700 `#00874f`, 800 `#006c3f`, 900 `#00512f`, 1000 `#003821` | a50 9%, a100 18%, a150 24%, a200 32% |
-| `blueGrayLight` | 0 `#ffffff`, 50 `#f8fafc`, 100 `#f1f5fa`, 200 `#e3eaf3`, 300 `#cbd5e2`, 400 `#b1c1d2`, 500 `#90a5bb`, 600 `#768ea7`, 700 `#6c849d`, 800 `#58728d`, 900 `#40566d`, 1000 `#2f4256`, 1100 `#243547`, 1200 `#192839`, 1300 `#0c1927` | a25 6%, a50 9%, a75 12%, a100 18%, a200 32%, a400 64% |
-| `blueGrayDark` | 0 `#fcfcfd`, 50 `#f8fafc`, 100 `#f1f5fa`, 200 `#e3eaf3`, 300 `#cbd5e2`, 400 `#b1c1d2`, 500 `#90a5bb`, 600 `#768ea7`, 700 `#6c849d`, 800 `#58728d`, 900 `#40566d`, 1000 `#2f4256`, 1100 `#243547`, 1200 `#192839`, 1300 `#0c1927` | a25 6%, a50 9%, a75 12%, a100 18%, a200 32%, a400 64% |
-| `ashGrayLight` | 0 `#ffffff`, 50 `#f9f9fa`, 100 `#f3f4f5`, 200 `#eeeff0`, 300 `#e3e4e5`, 400 `#cacdd1`, 500 `#acb0b6`, 600 `#9499a0`, 700 `#858b93`, 800 `#6b717a`, 900 `#545a64`, 1000 `#3f4550`, 1100 `#282e36`, 1200 `#1c2026`, 1300 `#0b0e12` | a25 6%, a50 9%, a75 9%, a100 18%, a200 32%, a400 32% |
-| `ashGrayDark` | 0 `#fcfcfc`, 50 `#e9e9ea`, 100 `#d5d5d6`, 200 `#bfc0c4`, 300 `#95979e`, 400 `#7a7c85`, 500 `#62636a`, 600 `#4e4f56`, 700 `#34353a`, 800 `#2e2f34`, 900 `#28292e`, 1000 `#232429`, 1100 `#1b1c22`, 1200 `#111218`, 1300 `#0a0a0b` | a25 6%, a50 9%, a75 9%, a100 18%, a200 32%, a400 32% |
-| `white` | 500 `#ffffff` | 10 9%, 25 12%, 50 18%, 100 32%, 200 48%, 300 64%, 400 80%, 450 88% |
-| `black` | 500 `#000000` | 10 9%, 25 12%, 50 18%, 100 32%, 200 56%, 300 72%, 400 80%, 450 88% |
