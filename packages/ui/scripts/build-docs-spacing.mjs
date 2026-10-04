@@ -7,6 +7,11 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const repo = path.resolve(root, '../..');
 const tokens = JSON.parse(fs.readFileSync(path.join(root, 'src/tokens/generated/spacing.json'), 'utf8'));
+const rules = fs
+  .readFileSync(path.join(repo, 'skills/guardrails/spacing.md'), 'utf8')
+  .split('\n')
+  .filter((l) => /^\| \d+ \|/.test(l))
+  .map((l) => `| ${l.split('|')[1].trim()} | ${l.split('|')[2].trim()} |`);
 const of = (g) => tokens.filter((t) => t.group === g);
 const figmaName = (t) => (t.figma ? `${t.group === 'borderWidth' ? 'border-width' : t.group}/${t.name}` : 'Code only');
 const row = (...c) => `| ${c.join(' | ')} |`;
@@ -22,6 +27,7 @@ w('- **Pixels.** Values are pixels in the tokens and in code, as in Blade.');
 w('- **Names.** Figma shows `spacing/5`, `radius/small` and `border-width/thin`. Code uses `--craft-spacing-5`, `--craft-radius-small` and `--craft-border-width-thin`.');
 w('- **Code only.** `radius/round` (50%, for circles) and the breakpoints are not Figma variables. Figma has no percent radius and no screen-width variable.');
 w('- **Not here yet.** Sizes, icon sizes, opacity, elevation and motion come with their own foundations.', '');
+w('## Guardrails', '', '| # | Rule |', '|---|---|', ...rules, '', 'Full reasons and confirmations: [spacing](../skills/guardrails/spacing.md).', '');
 w('## Spacing', '', 'Padding, gaps and margins.', '', '| Token | Value | In Figma | CSS variable |', '|---|---|---|---|');
 for (const t of of('spacing')) w(row(`\`${t.name}\``, t.value, `\`${figmaName(t)}\``, `\`${t.cssVar}\``));
 w('', '## Radius', '', '| Token | Value | In Figma | CSS variable |', '|---|---|---|---|');

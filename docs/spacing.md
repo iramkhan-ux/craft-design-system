@@ -12,6 +12,16 @@ Source decision: [0003 Spacing foundation](../decisions/0003-spacing-foundation.
 - **Code only.** `radius/round` (50%, for circles) and the breakpoints are not Figma variables. Figma has no percent radius and no screen-width variable.
 - **Not here yet.** Sizes, icon sizes, opacity, elevation and motion come with their own foundations.
 
+## Guardrails
+
+| # | Rule |
+|---|---|
+| 1 | Designers use the spacing, radius and border width tokens only. No hand-typed spacing, radius or border widths. |
+| 2 | `max` radius is for pills and `round` is for circles only. |
+| 3 | Padding, gaps and margins come from the spacing scale only. |
+
+Full reasons and confirmations: [spacing](../skills/guardrails/spacing.md).
+
 ## Spacing
 
 Padding, gaps and margins.
