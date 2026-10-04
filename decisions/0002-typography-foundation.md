@@ -24,13 +24,13 @@ Second foundation of the Craft pilot. Values are read from Blade's source (`blad
 | 6 | Real fonts are loaded in Storybook once their licenses are confirmed. |
 | 7 | In Figma, font family variables hold the font name only (Inter, TASA Orbiter, Roboto Mono). The CSS fallback lists live in code. |
 | 8 | Figma uses Roboto Mono for Code, because Menlo is an Apple system font that Figma cannot use. Roboto Mono is also in Blade's own fallback list. In code, Menlo stays first. |
-| 9 | Letter spacing is set as a percent directly on each Figma text style and is not tied to a variable. Percent stays the stored value in the tokens. In code it is converted to em (percent divided by 100). |
-| 10 | The Typography page's Documentation panel shows the CSS font fallback lists and the letter-spacing-to-em conversion as code snippet blocks, in the style of Blade's own Figma docs (a dark code block with the CSS written out). The lists come from the tokens, not from Blade's Figma text. |
+| 9 | Letter spacing is set as a percent directly on each Figma text style and is not tied to a variable. Percent stays the stored value in the tokens. In code it is converted to pixels for each style (font size x percent / 100), the same way Blade does it. Em is not used anywhere. |
+| 10 | The Typography page's Documentation panel shows the CSS font fallback lists and the percent-to-pixel letter spacing conversion as code snippet blocks, in the style of Blade's own Figma docs (a dark code block with the CSS written out). The lists come from the tokens, not from Blade's Figma text. |
 | 11 | Every decision that affects a Figma page is written in that page's Documentation panel (see Figma guardrail 9). |
 
 ## Exceptions and oddities
 
-- Letter spacing is stored as a percent string (`-3.3%`) because that is how Blade and Figma express it. Em was considered and rejected: the token format (DTCG) allows only px and rem, and percent matches Blade and Figma. Em is derived for CSS.
+- Letter spacing is stored as a percent string (`-3.3%`) because that is how Blade and Figma express it. Em was considered and rejected by the designer. The token format (DTCG) allows only px and rem, and percent matches Blade and Figma. For CSS the percent is converted to pixels per style (font size x percent / 100), which is what Blade's `makeLetterSpacing` does.
 - Figma applies a variable-tied letter spacing in pixels, not percent (measured: the same 43-character line at 48px was 961px wide with -1.3% set directly and 932px with -1.3 tied to a variable). So letter spacing is set directly on each style. The `font/letterSpacing` variables are reference values only.
 - The code snippet blocks in the Documentation panel are filled with two color primitives (blueGrayLight 1100 and emerald 200), because the semantic layer has no dark surface in the light theme. Documentation-only exception.
 - Blade's Figma docs show slightly different font lists (for example "Tasa Orbiter Display", -apple-system, BlinkMacSystemFont, ... sans-serif) from Blade's source (`"TASA Orbiter", "TASA Orbiter Fallback Arial", Arial`). Craft follows the source values in the tokens.
