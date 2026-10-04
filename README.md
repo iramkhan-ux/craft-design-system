@@ -24,7 +24,8 @@ A multi-agent framework for creating and maintaining a design system. Designers 
 | `decisions/` | One file per approved change. Not read by default |
 | `docs/` | Generated guideline pages |
 | `packages/ui/` | React components and Storybook |
-| `CHANGELOG.md` | Generated record of changes |
+| `CHANGELOG.md` | History of changes up to 2026-10-05 |
+| `changelog/` | One entry file per pull request, from 2026-10-05 |
 
 ## Status
 

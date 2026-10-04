@@ -2,6 +2,8 @@
 
 Generated record of approved changes. Each entry shows the version, date, who approved it, and what changed.
 
+From 2026-10-05, new entries are one file per pull request in [`changelog/unreleased/`](changelog/README.md). Entries below are the history up to that date.
+
 ## Unreleased
 
 - Color rebuilt from Blade source code (decision 0004): 353 primitives and 435 semantic tokens (light and dark), replacing the values taken from the Blade Figma file. Adds orchid, magenta and topaz, the whiteSolid and blackSolid neutrals, popup and data (chart) tokens; removes the hover and elevation colors that are not in the source. Storybook and `docs/color.md` rebuilt, and the color docs generator is now in the repo (`npm run docs:color`). Blade source is recorded as the final source of truth. Approved by Iram Khan, 2026-10-05.

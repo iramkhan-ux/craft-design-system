@@ -1,0 +1,47 @@
+{
+  "spacing": {
+    "$type": "dimension",
+    "0": {"$value": "0px"},
+    "1": {"$value": "2px"},
+    "2": {"$value": "4px"},
+    "3": {"$value": "8px"},
+    "4": {"$value": "12px"},
+    "5": {"$value": "16px"},
+    "6": {"$value": "20px"},
+    "7": {"$value": "24px"},
+    "8": {"$value": "32px"},
+    "9": {"$value": "40px"},
+    "10": {"$value": "48px"},
+    "11": {"$value": "56px"}
+  },
+  "radius": {
+    "$type": "dimension",
+    "none": {"$value": "0px"},
+    "2xsmall": {"$value": "2px"},
+    "xsmall": {"$value": "4px"},
+    "small": {"$value": "8px"},
+    "medium": {"$value": "12px"},
+    "large": {"$value": "16px"},
+    "xlarge": {"$value": "20px"},
+    "2xlarge": {"$value": "24px"},
+    "max": {"$value": "9999px"},
+    "round": {"$value": "50%", "$extensions": {"craft": {"figma": false}}}
+  },
+  "borderWidth": {
+    "$type": "dimension",
+    "none": {"$value": "0px"},
+    "thinner": {"$value": "0.5px"},
+    "thin": {"$value": "1px"},
+    "thick": {"$value": "1.5px"},
+    "thicker": {"$value": "2px"}
+  },
+  "breakpoint": {
+    "$type": "dimension",
+    "base": {"$value": "0px", "$extensions": {"craft": {"figma": false}}},
+    "xs": {"$value": "320px", "$extensions": {"craft": {"figma": false}}},
+    "s": {"$value": "480px", "$extensions": {"craft": {"figma": false}}},
+    "m": {"$value": "768px", "$extensions": {"craft": {"figma": false}}},
+    "l": {"$value": "1024px", "$extensions": {"craft": {"figma": false}}},
+    "xl": {"$value": "1200px", "$extensions": {"craft": {"figma": false}}}
+  }
+}
