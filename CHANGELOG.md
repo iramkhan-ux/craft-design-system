@@ -4,6 +4,7 @@ Generated record of approved changes. Each entry shows the version, date, who ap
 
 ## Unreleased
 
+- Typography documentation panel in Figma: code snippet blocks for the CSS font fallback lists and the letter-spacing-to-em conversion, in the style of Blade's Figma docs. Decision 0002 updated (decision 10 added, decision 10 renumbered to 11). Approved by Iram Khan, 2026-10-05.
 - Typography in Figma: `_typography-primitives` (39 variables), 45 text styles, and a Typography page with a Documentation panel. The Color page also gets a Documentation panel. Decisions 7 to 10 added to 0002 (family names only in Figma, Roboto Mono for Code in Figma, letter spacing set per style as a percent, documentation kept in step). Figma guardrail 9 added. Parity checksum script added. Approved by Iram Khan, 2026-10-05.
 - Story tests, accessibility checks that fail the build, and visual comparison of every story against approved images, all on every PR. Fixed two accessibility problems on the Colors page (faint reference value, notice banner text color). Approved by Iram Khan, 2026-10-03.
 - Typography guardrails (4 rules): text styles only, heading font for Display and Heading only, Caption regular only, and text color kept out of text styles. Approved by Iram Khan, 2026-10-03.
