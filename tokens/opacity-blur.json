@@ -1,0 +1,27 @@
+{
+  "opacity": {
+    "$type": "number",
+    "0": {"$value": 0},
+    "1": {"$value": 0.01},
+    "50": {"$value": 0.06},
+    "100": {"$value": 0.09},
+    "200": {"$value": 0.12},
+    "300": {"$value": 0.18},
+    "400": {"$value": 0.24},
+    "500": {"$value": 0.32},
+    "600": {"$value": 0.48},
+    "700": {"$value": 0.56},
+    "800": {"$value": 0.64},
+    "900": {"$value": 0.72},
+    "1000": {"$value": 0.8},
+    "1100": {"$value": 0.88},
+    "1200": {"$value": 0.94},
+    "1300": {"$value": 1}
+  },
+  "backdropBlur": {
+    "$type": "dimension",
+    "low": {"$value": "4px", "$description": "Subtle background blur"},
+    "medium": {"$value": "8px", "$description": "Moderate background blur"},
+    "high": {"$value": "12px", "$description": "Strong background blur"}
+  }
+}

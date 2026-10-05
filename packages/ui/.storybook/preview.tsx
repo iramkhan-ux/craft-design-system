@@ -12,6 +12,7 @@ import '../src/tokens/generated/typography.css';
 import '../src/tokens/generated/spacing.css';
 import '../src/tokens/generated/elevation.css';
 import '../src/tokens/generated/motion.css';
+import '../src/tokens/generated/opacity-blur.css';
 
 const preview: Preview = {
   parameters: {
