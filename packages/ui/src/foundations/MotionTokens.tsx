@@ -11,7 +11,7 @@ const small = 'craft-text-body-small-regular';
 
 const byGroup = (group: MotionToken['group']) => motionTokens.filter((t) => t.group === group);
 
-// Samples only move when someone presses Play, and not at all when the person prefers reduced motion.
+// Samples only move while a row is hovered (or focused), and not at all when the person prefers reduced motion.
 const reducedQuery = '(prefers-reduced-motion: reduce)';
 function useReducedMotion() {
   return useSyncExternalStore(
@@ -81,7 +81,7 @@ function Table({ head, children }: { head: string[]; children: React.ReactNode }
 const TRACK = 200;
 const dotSize = 16;
 
-/** A dot that slides along a track when `run` flips. `delay`, `duration` and `easing` are CSS values. */
+/** A dot that slides along a track while `run` is true, and jumps back to the start when it turns false. */
 function Dot({ run, reduced, duration, delay = '0ms', easing = 'var(--craft-easing-standard)' }: { run: boolean; reduced: boolean; duration: string; delay?: string; easing?: string }) {
   return (
     <div style={{ width: TRACK, height: dotSize, background: v('surface-background-gray-moderate'), borderRadius: 'var(--craft-radius-max)', position: 'relative' }}>
@@ -95,58 +95,49 @@ function Dot({ run, reduced, duration, delay = '0ms', easing = 'var(--craft-easi
           borderRadius: 'var(--craft-radius-round)',
           background: v('interactive-background-primary-default'),
           transform: run ? `translateX(${TRACK - dotSize}px)` : 'translateX(0)',
-          transition: reduced ? 'none' : `transform ${duration} ${easing} ${delay}`,
+          // Going back to the start is instant, so the next hover plays the whole animation again.
+          transition: run && !reduced ? `transform ${duration} ${easing} ${delay}` : 'none',
         }}
       />
     </div>
   );
 }
 
-function Play({ onPlay }: { onPlay: () => void }) {
+/**
+ * A table row whose sample plays while the pointer is over the row (or a control in it has keyboard focus).
+ * This is only for this preview. It is not how the motion tokens are meant to be used.
+ */
+function SampleRow({ children }: { children: (run: boolean) => React.ReactNode }) {
+  const [hover, setHover] = useState(false);
+  const [focus, setFocus] = useState(false);
   return (
-    <button
-      type="button"
-      className={bodyBold}
-      onClick={onPlay}
-      style={{
-        cursor: 'pointer',
-        padding: '8px 16px',
-        borderRadius: 'var(--craft-radius-small)',
-        border: `1px solid ${v('interactive-border-gray-default')}`,
-        background: v('surface-background-gray-intense'),
-        color: v('surface-text-gray-normal'),
-        marginBottom: 16,
-      }}
+    <tr
+      onPointerEnter={() => setHover(true)}
+      onPointerLeave={() => setHover(false)}
+      onFocusCapture={() => setFocus(true)}
+      onBlurCapture={() => setFocus(false)}
     >
-      Play all
-    </button>
+      {children(hover || focus)}
+    </tr>
   );
 }
 
-/** Flips `run` off, then on, so every dot slides again from the start. */
-function useReplay() {
-  const [run, setRun] = useState(false);
-  const play = () => {
-    setRun(false);
-    requestAnimationFrame(() => requestAnimationFrame(() => setRun(true)));
-  };
-  return { run, play };
-}
-
 export function DurationPage() {
-  const { run, play } = useReplay();
   const reduced = useReducedMotion();
   return (
-    <Page title="Duration" intro="How long an animation takes. Use these for every transition. Press Play to see each one, using the standard easing. Click a variable to copy it.">
-      <Play onPlay={play} />
+    <Page title="Duration" intro="How long an animation takes. Use these for every transition. Hover a row to see it move, using the standard easing. Click a variable to copy it.">
       <Table head={['Token', 'Value', 'CSS variable', 'Sample']}>
         {byGroup('duration').map((t) => (
-          <tr key={t.name}>
-            <td style={cell} className={bodyBold}>{t.name}</td>
-            <td style={cell} className={body}>{t.value}</td>
-            <td style={cell}><CopyText text={t.cssVar} /></td>
-            <td style={cell}><Dot run={run} reduced={reduced} duration={`var(${t.cssVar})`} /></td>
-          </tr>
+          <SampleRow key={t.name}>
+            {(run) => (
+              <>
+                <td style={cell} className={bodyBold}>{t.name}</td>
+                <td style={cell} className={body}>{t.value}</td>
+                <td style={cell}><CopyText text={t.cssVar} /></td>
+                <td style={cell}><Dot run={run} reduced={reduced} duration={`var(${t.cssVar})`} /></td>
+              </>
+            )}
+          </SampleRow>
         ))}
       </Table>
     </Page>
@@ -154,19 +145,21 @@ export function DurationPage() {
 }
 
 export function DelayPage() {
-  const { run, play } = useReplay();
   const reduced = useReducedMotion();
   return (
-    <Page title="Delay" intro="How long to wait before an animation starts. Press Play to see each delay, followed by a moderate move. Click a variable to copy it.">
-      <Play onPlay={play} />
+    <Page title="Delay" intro="How long to wait before an animation starts. Hover a row to see its delay, followed by a moderate move. Click a variable to copy it.">
       <Table head={['Token', 'Value', 'CSS variable', 'Sample']}>
         {byGroup('delay').map((t) => (
-          <tr key={t.name}>
-            <td style={cell} className={bodyBold}>{t.name}</td>
-            <td style={cell} className={body}>{t.value}</td>
-            <td style={cell}><CopyText text={t.cssVar} /></td>
-            <td style={cell}><Dot run={run} reduced={reduced} duration="var(--craft-duration-moderate)" delay={`var(${t.cssVar})`} /></td>
-          </tr>
+          <SampleRow key={t.name}>
+            {(run) => (
+              <>
+                <td style={cell} className={bodyBold}>{t.name}</td>
+                <td style={cell} className={body}>{t.value}</td>
+                <td style={cell}><CopyText text={t.cssVar} /></td>
+                <td style={cell}><Dot run={run} reduced={reduced} duration="var(--craft-duration-moderate)" delay={`var(${t.cssVar})`} /></td>
+              </>
+            )}
+          </SampleRow>
         ))}
       </Table>
     </Page>
@@ -191,23 +184,25 @@ function Curve({ c }: { c: [number, number, number, number] }) {
 }
 
 export function EasingPage() {
-  const { run, play } = useReplay();
   const reduced = useReducedMotion();
   return (
-    <Page title="Easing" intro="How an animation speeds up and slows down. Each one has a job. Press Play to see them move over a gentle duration. Click a variable to copy it.">
-      <Play onPlay={play} />
+    <Page title="Easing" intro="How an animation speeds up and slows down. Each one has a job. Hover a row to see it move over a gentle duration. Click a variable to copy it.">
       <Table head={['Token', 'Used for', 'CSS variable', 'Curve', 'Sample']}>
         {byGroup('easing').map((t) => (
-          <tr key={t.name}>
-            <td style={cell} className={bodyBold}>{t.name}</td>
-            <td style={cell} className={body}>{t.use}</td>
-            <td style={cell}>
-              <CopyText text={t.cssVar} />
-              <div className={small} style={{ color: v('surface-text-gray-subtle') }}>{t.value}</div>
-            </td>
-            <td style={cell}>{t.curve && <Curve c={t.curve} />}</td>
-            <td style={cell}><Dot run={run} reduced={reduced} duration="var(--craft-duration-gentle)" easing={`var(${t.cssVar})`} /></td>
-          </tr>
+          <SampleRow key={t.name}>
+            {(run) => (
+              <>
+                <td style={cell} className={bodyBold}>{t.name}</td>
+                <td style={cell} className={body}>{t.use}</td>
+                <td style={cell}>
+                  <CopyText text={t.cssVar} />
+                  <div className={small} style={{ color: v('surface-text-gray-subtle') }}>{t.value}</div>
+                </td>
+                <td style={cell}>{t.curve && <Curve c={t.curve} />}</td>
+                <td style={cell}><Dot run={run} reduced={reduced} duration="var(--craft-duration-gentle)" easing={`var(${t.cssVar})`} /></td>
+              </>
+            )}
+          </SampleRow>
         ))}
       </Table>
     </Page>
