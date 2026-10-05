@@ -13,6 +13,7 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Typography foundation v1 | 2026-10-05 | Iram Khan | `typography-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Typography foundation v1 - approved 2026-10-05 | `2406570588531573574` |
 | Color foundation v2 | 2026-10-05 | Iram Khan | `color-foundation-v2` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Color foundation v2 - approved 2026-10-05 | `2406579393783744600` |
 | Spacing foundation v1 | 2026-10-05 | Iram Khan | `spacing-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Spacing foundation v1 - approved 2026-10-05 | `2406602555996392802` |
+| Elevation foundation v1 | 2026-10-05 | Iram Khan | `elevation-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Elevation foundation v1 - approved 2026-10-05 | `2406592049978404343` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
 
@@ -21,6 +22,8 @@ Typography foundation v1 covers 39 typography primitives (checksum `2d3e10fd`) a
 Color foundation v2 replaces v1. It covers 353 primitives (checksum `2f2b1113`) and 435 semantic color variables (light checksum `9fcbe785`; the dark values in the tokens have checksum `4b1fa8ad`), rebuilt from Blade source (decision 0004). To go back to the v1 palette, roll back to the `color-foundation-v1` tag and its Figma version.
 
 Spacing foundation v1 covers the 26 variables in the `layout` collection (checksum `bd4cfeb5`) and the Spacing page. Its Figma version was saved right after Color foundation v2, so both versions hold the same file state. Both tags are created on the merge commit of the pull request that adds these rows.
+
+Elevation foundation v1 covers the 3 effect styles `elevation/lowRaised`, `midRaised` and `highRaised`, the 12 `elevation/*` number variables in the `layout` collection, and the Elevation page (checksum `bd9d0c95`). Its tag is on the merge commit of pull request #21.
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 
