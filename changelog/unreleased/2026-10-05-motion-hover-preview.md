@@ -1,0 +1,1 @@
+Storybook Motion pages: samples now play when you hover a row (or focus it with the keyboard) and reset when you leave, so they replay every time. The "Play all" button is removed and fixes the dots getting stuck at the end. Preview only, so the tokens and how they are used are unchanged. Reduced motion is still respected. Requested by Iram Khan, 2026-10-05.

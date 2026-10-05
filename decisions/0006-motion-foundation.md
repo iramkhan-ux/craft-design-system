@@ -24,7 +24,7 @@ Source: `razorpay/blade`, commit `e914cf6a843193dc5f259aae27027c1dbb3544ea`, fil
 | 4 | One layer only. Time is in milliseconds. Easing is `cubic-bezier(...)`. |
 | 5 | Code: CSS variables `--craft-duration-*`, `--craft-delay-*`, `--craft-easing-*`. |
 | 6 | Figma: no variables, because Figma cannot use a duration or easing curve as a variable in a design and Blade has none. Figma gets a Motion page that shows the values (specimen only, like the Color and Typography pages). Decided by the designer. |
-| 7 | The Storybook samples move only when someone presses Play, and not at all when the person prefers reduced motion. |
+| 7 | The Storybook samples play while a row is hovered (or has keyboard focus), starting from the beginning each time, and not at all when the person prefers reduced motion. This is only how the preview works, not how the tokens are used. Changed from a Play button on 2026-10-05 at the designer's request. |
 
 ## Exceptions and oddities
 
