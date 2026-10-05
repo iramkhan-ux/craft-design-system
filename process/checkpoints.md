@@ -14,6 +14,7 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Color foundation v2 | 2026-10-05 | Iram Khan | `color-foundation-v2` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Color foundation v2 - approved 2026-10-05 | `2406579393783744600` |
 | Spacing foundation v1 | 2026-10-05 | Iram Khan | `spacing-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Spacing foundation v1 - approved 2026-10-05 | `2406602555996392802` |
 | Elevation foundation v1 | 2026-10-05 | Iram Khan | `elevation-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Elevation foundation v1 - approved 2026-10-05 | `2406592049978404343` |
+| Motion foundation v1 | 2026-10-05 | Iram Khan | `motion-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Motion foundation v1 - approved 2026-10-05 | `2406856294052510987` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
 
@@ -24,6 +25,8 @@ Color foundation v2 replaces v1. It covers 353 primitives (checksum `2f2b1113`) 
 Spacing foundation v1 covers the 26 variables in the `layout` collection (checksum `bd4cfeb5`) and the Spacing page. Its Figma version was saved right after Color foundation v2, so both versions hold the same file state. Both tags are created on the merge commit of the pull request that adds these rows.
 
 Elevation foundation v1 covers the 3 effect styles `elevation/lowRaised`, `midRaised` and `highRaised`, the 12 `elevation/*` number variables in the `layout` collection, and the Elevation page (checksum `bd9d0c95`). Its tag is on the merge commit of pull request #21.
+
+Motion foundation v1 covers the 23 code-only motion tokens (8 durations, 8 delays, 7 easings, from `tokens/motion.json`), the Storybook Motion pages with hover samples, and the Figma Motion page, which is a specimen only. Motion has no Figma variables, so rolling back means the repo tag. Its tag is on the merge commit of pull request #24, which is the approved state (the tokens are unchanged since pull request #23).
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 
