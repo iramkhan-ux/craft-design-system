@@ -1,0 +1,34 @@
+{
+  "duration": {
+    "$type": "duration",
+    "2xquick": {"$value": "80ms"},
+    "xquick": {"$value": "160ms"},
+    "quick": {"$value": "200ms"},
+    "moderate": {"$value": "280ms"},
+    "xmoderate": {"$value": "360ms"},
+    "gentle": {"$value": "480ms"},
+    "xgentle": {"$value": "640ms"},
+    "2xgentle": {"$value": "960ms"}
+  },
+  "delay": {
+    "$type": "duration",
+    "2xquick": {"$value": "80ms"},
+    "xquick": {"$value": "160ms"},
+    "moderate": {"$value": "280ms"},
+    "gentle": {"$value": "480ms"},
+    "xgentle": {"$value": "960ms"},
+    "long": {"$value": "2000ms"},
+    "xlong": {"$value": "3000ms"},
+    "2xlong": {"$value": "5000ms"}
+  },
+  "easing": {
+    "$type": "cubicBezier",
+    "linear": {"$value": [0, 0, 0, 0], "$description": "Marquee, progress bar"},
+    "entrance": {"$value": [0, 0, 0.2, 1], "$description": "Entry of modals, drawers, dropdowns"},
+    "exit": {"$value": [0.17, 0, 1, 1], "$description": "Exit of modals, drawers, dropdowns"},
+    "standard": {"$value": [0.3, 0, 0.2, 1], "$description": "Morph"},
+    "emphasized": {"$value": [0.5, 0, 0, 1], "$description": "Hover states of interactive items"},
+    "overshoot": {"$value": [0.5, 0, 0.3, 1.5], "$description": "Toast notifications"},
+    "shake": {"$value": [1, 0.5, 0, 0.5], "$description": "Error states"}
+  }
+}

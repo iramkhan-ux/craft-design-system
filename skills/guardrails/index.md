@@ -17,5 +17,6 @@ Nothing is added without a designer's confirmation.
 - [Color](color.md): 5 rules
 - [Elevation](elevation.md): 2 rules
 - [Figma](figma.md): 3 rules
+- [Motion](motion.md): 2 rules
 - [Spacing](spacing.md): 3 rules
 - [Typography](typography.md): 4 rules

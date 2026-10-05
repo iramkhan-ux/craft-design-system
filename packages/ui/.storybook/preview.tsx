@@ -11,6 +11,7 @@ import '../src/tokens/generated/color.css';
 import '../src/tokens/generated/typography.css';
 import '../src/tokens/generated/spacing.css';
 import '../src/tokens/generated/elevation.css';
+import '../src/tokens/generated/motion.css';
 
 const preview: Preview = {
   parameters: {
