@@ -11,6 +11,7 @@ The master record of design values. Figma variables, code, and docs are generate
 | `typography.primitives.json` | 39 raw type values: families, sizes, line heights, letter spacings, weights (internal only) |
 | `spacing.json` | 33 layout tokens: spacing (12), radius (10), border width (5), breakpoints (6). One layer, pixels |
 | `elevation.json` | 4 elevation levels (shadows), light and dark. Colors point to color primitives |
+| `motion.json` | 23 motion tokens: durations (8), delays (8), easings (7). One layer, code only |
 | `typography.styles.json` | 45 text styles (Display, Heading, Body, Caption, Code), each pointing to primitives |
 
 ## Format
