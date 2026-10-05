@@ -4,6 +4,8 @@
 
 A multi-agent framework for creating and maintaining a design system. Designers make the decisions. Agents build and maintain the Figma library, React code, Storybook, guideline docs, and changelog.
 
+**[View the Storybook](https://iramkhan-ux.github.io/craft-design-system/)** to see the foundations (color, typography, spacing, elevation, motion) as they are built.
+
 ## How it works
 
 - Designers approve work at each checkpoint: prototype, Figma component, code, docs.
