@@ -13,6 +13,7 @@ The master record of design values. Figma variables, code, and docs are generate
 | `elevation.json` | 4 elevation levels (shadows), light and dark. Colors point to color primitives |
 | `motion.json` | 23 motion tokens: durations (8), delays (8), easings (7). One layer, code only |
 | `opacity-blur.json` | 19 tokens: opacity (16) and backdrop blur (3). One layer |
+| `icon-size.json` | 6 icon sizes, `xsmall` 8px to `2xlarge` 32px. One layer |
 | `typography.styles.json` | 45 text styles (Display, Heading, Body, Caption, Code), each pointing to primitives |
 
 ## Format

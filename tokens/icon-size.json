@@ -1,0 +1,11 @@
+{
+  "iconSize": {
+    "$type": "dimension",
+    "xsmall": {"$value": "8px"},
+    "small": {"$value": "12px"},
+    "medium": {"$value": "16px"},
+    "large": {"$value": "20px"},
+    "xlarge": {"$value": "24px"},
+    "2xlarge": {"$value": "32px"}
+  }
+}
