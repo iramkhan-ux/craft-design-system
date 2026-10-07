@@ -31,7 +31,7 @@ Source: `razorpay/blade`, commit `e914cf6a843193dc5f259aae27027c1dbb3544ea`, fil
 
 ## Rules confirmed
 
-Drafts proposed to the designer. Nothing is saved to `skills/guardrails/` until confirmed.
+See `skills/guardrails/icon-size.md` (2 rules, confirmed by Iram Khan on 2026-10-07).
 
 ## Downstream artifacts
 
