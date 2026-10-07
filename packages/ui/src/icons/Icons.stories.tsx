@@ -113,10 +113,16 @@ function Gallery() {
           Color
           <select value={color} onChange={(e) => setColor(e.target.value as IconColor)} style={field}>
             <option value="currentColor">currentColor</option>
-            {iconColors.map((c) => (
-              <option key={c} value={c}>
-                {c}
-              </option>
+            {(['surface', 'interactive', 'feedback'] as const).map((g) => (
+              <optgroup key={g} label={`${g[0].toUpperCase()}${g.slice(1)} (${iconColors.filter((c) => c.startsWith(`${g}.`)).length})`}>
+                {iconColors
+                  .filter((c) => c.startsWith(`${g}.`))
+                  .map((c) => (
+                    <option key={c} value={c}>
+                      {c}
+                    </option>
+                  ))}
+              </optgroup>
             ))}
           </select>
         </label>

@@ -1,0 +1,1 @@
+Storybook Icons / Library: the Color dropdown now groups the 71 icon color tokens into Surface (17), Interactive (44) and Feedback (10). No tokens changed; all 71 match Blade source. Approved by Iram Khan, 2026-10-08.
