@@ -22,4 +22,5 @@ Nothing is added without a designer's confirmation.
 - [Motion](motion.md): 2 rules
 - [Opacity and blur](opacity-blur.md): 2 rules
 - [Spacing](spacing.md): 3 rules
+- [Spinner](spinner.md): 3 rules
 - [Typography](typography.md): 4 rules

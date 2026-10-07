@@ -12,6 +12,16 @@ Source decision: [0010 Spinner](../decisions/0010-spinner.md). Pilot scope: web,
 - **Motion.** One full turn every 960ms (`duration.2xgentle`, `easing.overshoot`), forever. With reduced motion on, it keeps turning at half the pace (1920ms).
 - **In Figma.** The Spinner is static. It turns only in code and Storybook. One component set, `Spinner`, with the variants `Size`, `Color` and `Label position`, plus a `Show label` switch and a `Label` text. 24 variants (checksum `e45126b9`).
 
+## Guardrails
+
+| # | Rule |
+|---|---|
+| 1 | Use the Spinner for loading and saving only. Never build your own spinner or spin an icon by hand. |
+| 2 | Pick the Spinner color for the surface it sits on: `white` on dark or colored surfaces, `onNeutral` on filled neutral surfaces, `neutral` or `primary` everywhere else. |
+| 3 | Never turn off the Spinner's motion or change its speed. |
+
+Full reasons and confirmations: [spinner](../skills/guardrails/spinner.md).
+
 ## Sizes
 
 | Size | Value | Icon size variable |

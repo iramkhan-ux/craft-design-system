@@ -36,7 +36,7 @@ Source: `razorpay/blade`, commit `e914cf6a843193dc5f259aae27027c1dbb3544ea`, fol
 
 ## Guardrails
 
-Drafts proposed to the designer. Nothing is saved to `skills/guardrails/` until confirmed.
+Confirmed by Iram Khan on 2026-10-08 and saved in `skills/guardrails/spinner.md` (3 rules).
 
 ## Downstream artifacts
 
