@@ -17,7 +17,7 @@ Storybook opens at http://localhost:6006. Open **Foundations / Color**.
 - The master record is `/tokens`. Nothing in this package holds color values by hand.
 - `npm run tokens` turns `/tokens` into CSS variables (`--craft-color-...`) and typed data in `src/tokens/generated`. It runs before Storybook starts. Those files are not committed.
 - It builds the typography CSS (`src/tokens/generated/typography.css`: variables plus one class per text style, such as `craft-text-display-small-semibold`) and typed data. Letter spacing is converted from percent to pixels for each style.
-- It builds the spacing CSS (`--craft-spacing-*`, `--craft-radius-*`, `--craft-border-width-*`, `--craft-breakpoint-*`). It builds the elevation CSS (`--craft-elevation-*`, light and dark) the motion CSS (`--craft-duration-*`, `--craft-delay-*`, `--craft-easing-*`) and the opacity and blur CSS (`--craft-opacity-*`, `--craft-backdrop-blur-*`). It prints a checksum for the color primitives and semantic tokens, the typography primitives and text styles, the spacing tokens that exist in Figma, the elevation values in Figma, and the opacity and blur values in Figma. They must match the checkpoint log in `process/checkpoints.md`.
+- It builds the spacing CSS (`--craft-spacing-*`, `--craft-radius-*`, `--craft-border-width-*`, `--craft-breakpoint-*`). It builds the elevation CSS (`--craft-elevation-*`, light and dark) the motion CSS (`--craft-duration-*`, `--craft-delay-*`, `--craft-easing-*`) the opacity and blur CSS (`--craft-opacity-*`, `--craft-backdrop-blur-*`) and the icon size CSS (`--craft-icon-size-*`). It prints a checksum for the color primitives and semantic tokens, the typography primitives and text styles, the spacing tokens that exist in Figma, the elevation values in Figma, the opacity and blur values in Figma, and the icon size values in Figma. They must match the checkpoint log in `process/checkpoints.md`.
 - Primitives are internal and are never used by components. Semantic tokens switch with `data-theme="light"` or `data-theme="dark"`.
 
 ## Scripts
@@ -31,6 +31,7 @@ Storybook opens at http://localhost:6006. Open **Foundations / Color**.
 | `npm run visual` | Compare every story with the approved images (Linux CI makes the approved images) |
 | `npm run docs:motion` | Regenerate `docs/motion.md` from the tokens |
 | `npm run docs:opacity-blur` | Regenerate `docs/opacity-blur.md` from the tokens |
+| `npm run docs:icon-size` | Regenerate `docs/icon-size.md` from the tokens |
 | `npm run docs:elevation` | Regenerate `docs/elevation.md` from the tokens |
 | `npm run docs:spacing` | Regenerate `docs/spacing.md` from the tokens |
 | `npm run docs:color` | Regenerate `docs/color.md` from the tokens |
