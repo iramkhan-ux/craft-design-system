@@ -14,6 +14,17 @@ Source decision: [0009 Icon library](../decisions/0009-icon-library.md). Pilot s
 - **In code:** `<ArrowLeftIcon size="large" color="interactive.icon.primary.normal" />`.
 - **In Figma:** each icon is one 24px component named `icon/<name>` on the Icons page (checksum `95d47966` over name and shape count, same as the build output). Resize an instance with an icon size variable (`icon-size/*`) and set its color to an icon color variable.
 
+## Guardrails
+
+| # | Rule |
+|---|---|
+| 1 | Use only icons from the library. Never draw, paste or import an icon from somewhere else. |
+| 2 | Set icon color only with the icon color tokens. |
+| 3 | Set icon size only with the six icon sizes. |
+| 4 | Give an icon that carries meaning an accessible label (`aria-label`). Hide decorative icons from screen readers. |
+
+Full reasons and confirmations: [icons](../skills/guardrails/icons.md).
+
 ## Outline icons (392)
 
 | Name | Code name |
