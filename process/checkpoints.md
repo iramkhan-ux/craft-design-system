@@ -16,6 +16,7 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Elevation foundation v1 | 2026-10-05 | Iram Khan | `elevation-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Elevation foundation v1 - approved 2026-10-05 | `2406592049978404343` |
 | Motion foundation v1 | 2026-10-05 | Iram Khan | `motion-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Motion foundation v1 - approved 2026-10-05 | `2406856294052510987` |
 | Opacity and blur foundation v1 | 2026-10-07 | Iram Khan | `opacity-blur-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Opacity and blur foundation v1 - approved 2026-10-07 | `2406867722960785616` |
+| Icon size foundation v1 | 2026-10-07 | Iram Khan | `icon-size-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icon size foundation v1 - approved 2026-10-07 | `2407338786057611466` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
 
@@ -30,6 +31,8 @@ Elevation foundation v1 covers the 3 effect styles `elevation/lowRaised`, `midRa
 Motion foundation v1 covers the 23 code-only motion tokens (8 durations, 8 delays, 7 easings, from `tokens/motion.json`), the Storybook Motion pages with hover samples, and the Figma Motion page, which is a specimen only. Motion has no Figma variables, so rolling back means the repo tag. Its tag is on the merge commit of pull request #24, which is the approved state (the tokens are unchanged since pull request #23).
 
 Opacity and blur foundation v1 covers the 19 variables in the `opacity-blur` collection (16 opacity, stored as whole percent, and 3 backdrop blur; checksum `f3d07ab1`) and the Opacity and blur page. Its tag is on the merge commit of pull request #26.
+
+Icon size foundation v1 covers the 6 `icon-size/*` variables in the `layout` collection (checksum `048cd702`; the collection now has 44 variables) and the Icon size page. Its tag is on the merge commit of pull request #29.
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 

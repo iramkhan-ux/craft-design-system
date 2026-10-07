@@ -10,6 +10,15 @@ Source decision: [0008 Icon size foundation](../decisions/0008-icon-size-foundat
 - **For icons only.** Figma cannot limit a variable to one component, so the Figma variables (`icon-size/*` in the `layout` collection) appear in any width or height field. Use them on icons, and nowhere else.
 - **Pixels.** Each size is a square, so the same value is the width and the height.
 
+## Guardrails
+
+| # | Rule |
+|---|---|
+| 1 | Use icon sizes for icons only, never for other widths or heights. |
+| 2 | Use the matching icon size token, never a hand-typed icon size. |
+
+Full reasons and confirmations: [icon size](../skills/guardrails/icon-size.md).
+
 ## Sizes
 
 | Token | Value | CSS variable |

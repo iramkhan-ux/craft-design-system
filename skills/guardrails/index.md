@@ -17,6 +17,7 @@ Nothing is added without a designer's confirmation.
 - [Color](color.md): 5 rules
 - [Elevation](elevation.md): 2 rules
 - [Figma](figma.md): 3 rules
+- [Icon size](icon-size.md): 2 rules
 - [Motion](motion.md): 2 rules
 - [Opacity and blur](opacity-blur.md): 2 rules
 - [Spacing](spacing.md): 3 rules
