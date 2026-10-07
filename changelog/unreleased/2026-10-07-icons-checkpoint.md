@@ -1,0 +1,1 @@
+Icons checkpoint closed: guardrails saved (4 rules), tag `icons-foundation-v1` on the merge commit of pull request #31, Figma version "Icons foundation v1 - approved 2026-10-07", log row in `process/checkpoints.md`. Approved by Iram Khan, 2026-10-07.

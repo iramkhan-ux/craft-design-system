@@ -17,6 +17,7 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Motion foundation v1 | 2026-10-05 | Iram Khan | `motion-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Motion foundation v1 - approved 2026-10-05 | `2406856294052510987` |
 | Opacity and blur foundation v1 | 2026-10-07 | Iram Khan | `opacity-blur-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Opacity and blur foundation v1 - approved 2026-10-07 | `2406867722960785616` |
 | Icon size foundation v1 | 2026-10-07 | Iram Khan | `icon-size-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icon size foundation v1 - approved 2026-10-07 | `2407338786057611466` |
+| Icons foundation v1 | 2026-10-07 | Iram Khan | `icons-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icons foundation v1 - approved 2026-10-07 | `2407600736467180411` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
 
@@ -33,6 +34,8 @@ Motion foundation v1 covers the 23 code-only motion tokens (8 durations, 8 delay
 Opacity and blur foundation v1 covers the 19 variables in the `opacity-blur` collection (16 opacity, stored as whole percent, and 3 backdrop blur; checksum `f3d07ab1`) and the Opacity and blur page. Its tag is on the merge commit of pull request #26.
 
 Icon size foundation v1 covers the 6 `icon-size/*` variables in the `layout` collection (checksum `048cd702`; the collection now has 44 variables) and the Icon size page. Its tag is on the merge commit of pull request #29.
+
+Icons foundation v1 covers the 447 icon components on the Icons page (392 outline, 55 filled; checksum `95d47966` over name and shape count) and the 447 SVG files in `icons/`. Its tag is on the merge commit of pull request #31. The four icon guardrails were saved after that merge, in the pull request that adds this row.
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 
