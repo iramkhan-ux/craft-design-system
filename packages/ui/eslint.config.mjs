@@ -8,7 +8,7 @@ import storybook from 'eslint-plugin-storybook';
 const rawColor = '/#[0-9a-fA-F]{3,8}\\b|\\b(rgb|rgba|hsl|hsla|oklch)\\(/';
 
 export default tseslint.config(
-  { ignores: ['node_modules', 'storybook-static', 'src/tokens/generated'] },
+  { ignores: ['node_modules', 'storybook-static', 'src/tokens/generated', 'src/icons/generated'] },
   js.configs.recommended,
   ...tseslint.configs.recommended,
   reactHooks.configs.flat.recommended,
