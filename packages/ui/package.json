@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Craft React components and Storybook (pilot: Blade reference).",
   "scripts": {
-    "tokens": "node scripts/build-tokens.mjs && node scripts/build-typography.mjs && node scripts/typography-checksum.mjs && node scripts/build-spacing.mjs && node scripts/build-elevation.mjs && node scripts/build-motion.mjs && node scripts/build-opacity-blur.mjs && node scripts/build-icon-size.mjs",
+    "tokens": "node scripts/build-tokens.mjs && node scripts/build-typography.mjs && node scripts/typography-checksum.mjs && node scripts/build-spacing.mjs && node scripts/build-elevation.mjs && node scripts/build-motion.mjs && node scripts/build-opacity-blur.mjs && node scripts/build-icon-size.mjs && node scripts/build-icons.mjs",
     "storybook": "npm run tokens && storybook dev -p 6006",
     "build-storybook": "npm run tokens && storybook build",
     "typecheck": "npm run tokens && tsc --noEmit",
@@ -14,6 +14,7 @@
     "visual": "npm run build-storybook && playwright test",
     "visual:update": "npm run build-storybook && playwright test --update-snapshots",
     "tokens:typography": "node scripts/typography-checksum.mjs",
+    "docs:icons": "npm run tokens && node scripts/build-docs-icons.mjs",
     "docs:icon-size": "npm run tokens && node scripts/build-docs-icon-size.mjs",
     "docs:opacity-blur": "npm run tokens && node scripts/build-docs-opacity-blur.mjs",
     "docs:motion": "npm run tokens && node scripts/build-docs-motion.mjs",
