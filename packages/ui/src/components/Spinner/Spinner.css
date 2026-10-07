@@ -1,0 +1,23 @@
+/* Spinner motion. Values come from the motion tokens. Blade: duration.2xgentle with easing.overshoot, turning forever. */
+@keyframes craft-spinner-turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.craft-spinner-turn {
+  padding: 1px;
+  width: max-content;
+  display: inline-flex;
+  animation: craft-spinner-turn var(--craft-duration-2xgentle) var(--craft-easing-overshoot) infinite;
+}
+
+/* Reduced motion: keep turning, at half the pace. Decision 0010. */
+@media (prefers-reduced-motion: reduce) {
+  .craft-spinner-turn {
+    animation-duration: calc(var(--craft-duration-2xgentle) * 2);
+  }
+}

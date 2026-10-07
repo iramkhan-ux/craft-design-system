@@ -33,6 +33,7 @@ Storybook opens at http://localhost:6006. Open **Foundations / Color**.
 | `npm run docs:opacity-blur` | Regenerate `docs/opacity-blur.md` from the tokens |
 | `npm run docs:icon-size` | Regenerate `docs/icon-size.md` from the tokens |
 | `npm run docs:icons` | Regenerate `docs/icons.md` from the SVG files |
+| `npm run docs:spinner` | Regenerate `docs/spinner.md` from the Spinner component |
 | `npm run docs:elevation` | Regenerate `docs/elevation.md` from the tokens |
 | `npm run docs:spacing` | Regenerate `docs/spacing.md` from the tokens |
 | `npm run docs:color` | Regenerate `docs/color.md` from the tokens |
