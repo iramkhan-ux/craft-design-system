@@ -11,6 +11,15 @@ Source decision: [0007 Opacity and backdrop blur foundation](../decisions/0007-o
 - **Backdrop blur** blurs what is behind a see-through surface, for example a frosted panel. It is a number of pixels.
 - **Code and Figma.** Both are CSS variables in code and number variables in the Figma `opacity-blur` collection (opacity as a whole percent, because Figma stores it that way).
 
+## Guardrails
+
+| # | Rule |
+|---|---|
+| 1 | Use the opacity tokens only. No hand-typed opacity values. |
+| 2 | Use backdrop blur only on see-through surfaces, and only with the three blur tokens. |
+
+Full reasons and confirmations: [opacity and blur](../skills/guardrails/opacity-blur.md).
+
 ## Opacity
 
 | Token | Value | Figma value | CSS variable |
