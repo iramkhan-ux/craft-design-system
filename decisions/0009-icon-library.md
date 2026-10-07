@@ -34,7 +34,7 @@ Source: `razorpay/blade`, commit `e914cf6a843193dc5f259aae27027c1dbb3544ea`, fol
 
 ## Rules confirmed
 
-Drafts proposed to the designer. Nothing is saved to `skills/guardrails/` until confirmed.
+Confirmed by Iram Khan on 2026-10-07 and saved in `skills/guardrails/icons.md` (4 rules).
 
 ## Downstream artifacts
 
