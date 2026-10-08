@@ -19,6 +19,7 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Icon size foundation v1 | 2026-10-07 | Iram Khan | `icon-size-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icon size foundation v1 - approved 2026-10-07 | `2407338786057611466` |
 | Icons foundation v1 | 2026-10-07 | Iram Khan | `icons-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icons foundation v1 - approved 2026-10-07 | `2407600736467180411` |
 | Opacity and blur foundation v2 | 2026-10-08 | Iram Khan | `opacity-blur-foundation-v2` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Opacity and blur foundation v2 - approved 2026-10-08 | `2407909002905718318` |
+| Spinner component v1 | 2026-10-08 | Iram Khan | `spinner-component-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Spinner component v1 - approved 2026-10-08 | `2407910660758625053` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
 
@@ -39,6 +40,8 @@ Icon size foundation v1 covers the 6 `icon-size/*` variables in the `layout` col
 Icons foundation v1 covers the 447 icon components on the Icons page (392 outline, 55 filled; checksum `95d47966` over name and shape count) and the 447 SVG files in `icons/`. Its tag is on the merge commit of pull request #31. The four icon guardrails were saved after that merge, in the pull request that adds this row.
 
 Opacity and blur foundation v2 replaces v1. It adds the three effect styles `backdrop-blur/low`, `medium` and `high` (checksum `4523886d`; radius bound to the blur variables). The 19 variables are unchanged (checksum `f3d07ab1`). To go back, roll back to the `opacity-blur-foundation-v1` tag and its Figma version. Its tag is on the merge commit of the pull request that adds this row. This Figma version also contains the Spinner page, which was added before the Spinner checkpoint.
+
+Spinner component v1 covers the Spinner component in code and Storybook (`packages/ui/src/components/Spinner`), the three guardrails, and the Figma Spinner page with the component set `Spinner` (24 variants, checksum `e45126b9`). Its tag is on the merge commit of pull request #33. The Figma version was saved after Opacity and blur foundation v2,, so it holds the same file state as that version. The tag `opacity-blur-foundation-v2` is on the merge commit of pull request #36.
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 
