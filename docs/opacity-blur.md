@@ -10,6 +10,7 @@ Source decision: [0007 Opacity and backdrop blur foundation](../decisions/0007-o
 - **Opacity** is a number from 0 (invisible) to 1 (solid). The token names (0, 1, 50 ... 1300) are steps, not percentages.
 - **Backdrop blur** blurs what is behind a see-through surface, for example a frosted panel. It is a number of pixels.
 - **Code and Figma.** Both are CSS variables in code and number variables in the Figma `opacity-blur` collection (opacity as a whole percent, because Figma stores it that way).
+- **Blur styles in Figma.** Each blur token is also an effect style, `backdrop-blur/low`, `backdrop-blur/medium` and `backdrop-blur/high`, so a designer can apply it from the Effects list. The radius of each style is bound to the blur variable of the same name.
 
 ## Guardrails
 
