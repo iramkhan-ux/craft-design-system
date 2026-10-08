@@ -66,3 +66,6 @@ const fnv = (str) => {
 const parity = tokens.map((t) => `${kebab(t.group)}/${t.name}=${t.figma}`);
 const count = (g) => tokens.filter((t) => t.group === g).length;
 console.log(`opacity-blur: ${count('opacity')} opacity, ${count('backdropBlur')} blur (${fnv(parity.join('\n'))})`);
+// Figma also has one effect style per blur token, named backdrop-blur/<name>, with the radius bound to the variable of the same name.
+const styleParity = tokens.filter((t) => t.group === 'backdropBlur').map((t) => `backdrop-blur/${t.name}=${t.figma}`);
+console.log(`backdrop-blur styles: ${styleParity.length} (${fnv(styleParity.join('\n'))})`);

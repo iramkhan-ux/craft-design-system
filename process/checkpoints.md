@@ -18,6 +18,7 @@ Each approved checkpoint is saved in two places, so it can be rolled back:
 | Opacity and blur foundation v1 | 2026-10-07 | Iram Khan | `opacity-blur-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Opacity and blur foundation v1 - approved 2026-10-07 | `2406867722960785616` |
 | Icon size foundation v1 | 2026-10-07 | Iram Khan | `icon-size-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icon size foundation v1 - approved 2026-10-07 | `2407338786057611466` |
 | Icons foundation v1 | 2026-10-07 | Iram Khan | `icons-foundation-v1` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Icons foundation v1 - approved 2026-10-07 | `2407600736467180411` |
+| Opacity and blur foundation v2 | 2026-10-08 | Iram Khan | `opacity-blur-foundation-v2` | `Iv0DFdGHaGliEvyKfsYMCk` (Craft library) | Opacity and blur foundation v2 - approved 2026-10-08 | `2407909002905718318` |
 
 Color foundation v1 covers 222 primitives (checksum `01860622`) and 263 semantic color variables (checksum `e9f3663b`).
 
@@ -36,6 +37,8 @@ Opacity and blur foundation v1 covers the 19 variables in the `opacity-blur` col
 Icon size foundation v1 covers the 6 `icon-size/*` variables in the `layout` collection (checksum `048cd702`; the collection now has 44 variables) and the Icon size page. Its tag is on the merge commit of pull request #29.
 
 Icons foundation v1 covers the 447 icon components on the Icons page (392 outline, 55 filled; checksum `95d47966` over name and shape count) and the 447 SVG files in `icons/`. Its tag is on the merge commit of pull request #31. The four icon guardrails were saved after that merge, in the pull request that adds this row.
+
+Opacity and blur foundation v2 replaces v1. It adds the three effect styles `backdrop-blur/low`, `medium` and `high` (checksum `4523886d`; radius bound to the blur variables). The 19 variables are unchanged (checksum `f3d07ab1`). To go back, roll back to the `opacity-blur-foundation-v1` tag and its Figma version. Its tag is on the merge commit of the pull request that adds this row. This Figma version also contains the Spinner page, which was added before the Spinner checkpoint.
 
 A Figma version named just "Color foundation v1" (id `2405152493960264355`, 2026-09-30) also exists. It was saved before the variables were rebuilt in natural order. Do not roll back to it.
 
