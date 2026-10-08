@@ -18,6 +18,10 @@ import '../src/tokens/generated/icon-size.css';
 const preview: Preview = {
   parameters: {
     a11y: { test: 'error' },
+    options: {
+      // Sidebar order: foundations first, then icons, then components. Anything new goes after these.
+      storySort: { order: ['Foundations', 'Icons', 'Components'] },
+    },
   },
 };
 
