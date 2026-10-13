@@ -1,0 +1,1 @@
+Spinner checkpoint closed: tag `spinner-component-v1` on the merge commit of pull request #33, Figma version "Spinner component v1 - approved 2026-10-08", log row in `process/checkpoints.md`. Tag `opacity-blur-foundation-v2` created on the merge commit of pull request #36. Approved by Iram Khan, 2026-10-08.
